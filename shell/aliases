@@ -10,6 +10,16 @@ alias l='ls -CF'
 
 alias e='$EDITOR'
 
+
+# docker
+alias dimgs='docker images'
+alias dps='docker ps'
+
+# docker-compose
+alias dcp='docker-compose'
+alias dcpu='docker-compose up'
+alias dcpud='docker-compose up -d'
+
 if [[ "$OSTYPE" == "darwin"* ]]; then
   alias cask='brew cask'
 fi

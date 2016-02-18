@@ -1,0 +1,20 @@
+2016-02-18 10:48:14,210 DEBUG    root            Loaded Command Group: ['gcloud', 'auth']
+2016-02-18 10:48:14,212 DEBUG    root            Loaded Command Group: ['gcloud', 'auth', 'login']
+2016-02-18 10:48:14,213 DEBUG    root            Running gcloud.auth.login with Namespace(__calliope_internal_deepest_parser=ArgumentParser(prog='gcloud.auth.login', usage=None, description='Obtains access credentials for your user account via a web-based authorization\nflow. If valid credentials for an account are already available from a prior\nauthorization, the account is set to active without rerunning the flow. Use\n`gcloud auth list` to view credentialed accounts.', version=None, formatter_class=<class 'argparse.HelpFormatter'>, conflict_handler='error', add_help=False), account=None, activate=True, authority_selector=None, authorization_token_file=None, brief=False, cmd_func=<bound method Command.Run of <googlecloudsdk.calliope.backend.Command object at 0x10c691a50>>, command_path=['gcloud', 'auth', 'login'], configuration=None, document=None, force=False, format=None, h=None, help=None, http_timeout=None, launch_browser=True, log_http=None, project=None, quiet=None, trace_email=None, trace_log=False, trace_token=None, user_output_enabled=None, verbosity=None, version=None).
+2016-02-18 10:48:14,289 INFO     ___FILE_ONLY___ Your browser has been opened to visit:
+
+    https://accounts.google.com/o/oauth2/auth?redirect_uri=http%3A%2F%2Flocalhost%3A8085%2F&prompt=select_account&response_type=code&client_id=32555940559.apps.googleusercontent.com&scope=https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fcloud-platform+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fappengine.admin+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fcompute&access_type=offline
+
+
+
+2016-02-18 10:48:21,593 INFO     oauth2client.client Successfully retrieved access token
+2016-02-18 10:48:21,596 DEBUG    oauth2client.multistore_file Initializing empty multistore file
+2016-02-18 10:48:21,601 DEBUG    oauth2client.multistore_file Initializing empty multistore file
+2016-02-18 10:48:21,608 INFO     ___FILE_ONLY___ Saved Application Default Credentials.
+
+2016-02-18 10:48:21,611 INFO     ___FILE_ONLY___ 
+You are now logged in as [jsvitolo@gmail.com].
+Your current project is [sisprev-cloud].  You can change this setting by running:
+  $ gcloud config set project PROJECT_ID
+
+2016-02-18 10:48:21,618 DEBUG    root            Metrics reporting process started...

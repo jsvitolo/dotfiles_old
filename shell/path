@@ -1,4 +1,10 @@
 if [[ "$OSTYPE" == "darwin"* ]]; then
   export PATH="/usr/local/opt/coreutils/libexec/gnubin:$PATH"
   export BROWSER="/usr/bin/open"
+
+  #Docker CoreOs
+  export DOCKER_HOST=172.17.8.101:2375
+
+  #fzf
+  [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 fi

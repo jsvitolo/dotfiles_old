@@ -1,0 +1,10 @@
+# Dir complete
+function c() { cd ~/code/$@; };
+compctl -/ -W ~/code c
+function h() { cd ~/$@; };
+compctl -/ -W ~/ h
+
+# ZSH & Bash Completion
+autoload -U compinit && compinit
+autoload -U bashcompinit && bashcompinit
+zmodload -i zsh/complist

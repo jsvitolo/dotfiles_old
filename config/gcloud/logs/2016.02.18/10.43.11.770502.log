@@ -1,0 +1,186 @@
+2016-02-18 10:43:11,771 DEBUG    root            Loaded Command Group: ['gcloud', 'components']
+2016-02-18 10:43:11,775 DEBUG    root            Loaded Command Group: ['gcloud', 'components', 'update']
+2016-02-18 10:43:11,777 DEBUG    root            Running gcloud.components.update with Namespace(__calliope_internal_deepest_parser=ArgumentParser(prog='gcloud.components.update', usage=None, description='Ensure that the latest version of all installed components is installed on the\nlocal workstation.', version=None, formatter_class=<class 'argparse.HelpFormatter'>, conflict_handler='error', add_help=False), account=None, allow_no_backup=False, architecture_override=None, authority_selector=None, authorization_token_file=None, cmd_func=<bound method Command.Run of <googlecloudsdk.calliope.backend.Command object at 0x1016f5ed0>>, command_path=['gcloud', 'components', 'update'], component_ids=['kubectl'], configuration=None, document=None, format=None, h=None, help=None, http_timeout=None, log_http=None, operating_system_override=None, project=None, quiet=None, sdk_root_override=None, snapshot_url_override=None, trace_email=None, trace_log=False, trace_token=None, user_output_enabled=None, verbosity=None, version=None).
+2016-02-18 10:43:15,172 INFO     ___FILE_ONLY___ 
+
+2016-02-18 10:43:15,173 INFO     ___FILE_ONLY___ 
+Your current Cloud SDK version is: 97.0.0
+
+2016-02-18 10:43:15,173 INFO     ___FILE_ONLY___ Installing components from version: 97.0.0
+
+2016-02-18 10:43:15,173 INFO     ___FILE_ONLY___ 
+
+2016-02-18 10:43:15,179 INFO     ___FILE_ONLY___ ┌────────────────────────────────────────────────┐
+2016-02-18 10:43:15,179 INFO     ___FILE_ONLY___ 
+
+2016-02-18 10:43:15,179 INFO     ___FILE_ONLY___ │      These components will be installed.       │
+2016-02-18 10:43:15,179 INFO     ___FILE_ONLY___ 
+
+2016-02-18 10:43:15,180 INFO     ___FILE_ONLY___ ├────────────────────────────┬─────────┬─────────┤
+2016-02-18 10:43:15,180 INFO     ___FILE_ONLY___ 
+
+2016-02-18 10:43:15,180 INFO     ___FILE_ONLY___ │            Name            │ Version │   Size  │
+2016-02-18 10:43:15,180 INFO     ___FILE_ONLY___ 
+
+2016-02-18 10:43:15,180 INFO     ___FILE_ONLY___ ├────────────────────────────┼─────────┼─────────┤
+2016-02-18 10:43:15,180 INFO     ___FILE_ONLY___ 
+
+2016-02-18 10:43:15,180 INFO     ___FILE_ONLY___ │ 
+2016-02-18 10:43:15,180 INFO     ___FILE_ONLY___ kubectl                   
+2016-02-18 10:43:15,180 INFO     ___FILE_ONLY___  
+2016-02-18 10:43:15,180 INFO     ___FILE_ONLY___ │ 
+2016-02-18 10:43:15,180 INFO     ___FILE_ONLY___        
+2016-02-18 10:43:15,181 INFO     ___FILE_ONLY___  
+2016-02-18 10:43:15,181 INFO     ___FILE_ONLY___ │ 
+2016-02-18 10:43:15,181 INFO     ___FILE_ONLY___        
+2016-02-18 10:43:15,181 INFO     ___FILE_ONLY___  
+2016-02-18 10:43:15,181 INFO     ___FILE_ONLY___ │
+2016-02-18 10:43:15,181 INFO     ___FILE_ONLY___ 
+
+2016-02-18 10:43:15,181 INFO     ___FILE_ONLY___ │ 
+2016-02-18 10:43:15,181 INFO     ___FILE_ONLY___ kubectl (Mac OS X, x86_64)
+2016-02-18 10:43:15,181 INFO     ___FILE_ONLY___  
+2016-02-18 10:43:15,181 INFO     ___FILE_ONLY___ │ 
+2016-02-18 10:43:15,181 INFO     ___FILE_ONLY___   1.1.7
+2016-02-18 10:43:15,181 INFO     ___FILE_ONLY___  
+2016-02-18 10:43:15,181 INFO     ___FILE_ONLY___ │ 
+2016-02-18 10:43:15,181 INFO     ___FILE_ONLY___ 5.1 MiB
+2016-02-18 10:43:15,181 INFO     ___FILE_ONLY___  
+2016-02-18 10:43:15,181 INFO     ___FILE_ONLY___ │
+2016-02-18 10:43:15,182 INFO     ___FILE_ONLY___ 
+
+2016-02-18 10:43:15,182 INFO     ___FILE_ONLY___ └────────────────────────────┴─────────┴─────────┘
+2016-02-18 10:43:15,182 INFO     ___FILE_ONLY___ 
+
+2016-02-18 10:43:15,182 INFO     ___FILE_ONLY___ 
+
+2016-02-18 10:43:16,441 INFO     ___FILE_ONLY___ For the latest full release notes, please visit:
+  https://cloud.google.com/sdk/release_notes
+
+
+2016-02-18 10:43:20,581 INFO     ___FILE_ONLY___ ╔════════════════════════════════════════════════════════════╗
+
+2016-02-18 10:43:20,581 INFO     ___FILE_ONLY___ ╠═ Creating update staging area                             ═╣
+
+2016-02-18 10:43:20,581 INFO     ___FILE_ONLY___ ╚
+2016-02-18 10:43:20,582 INFO     ___FILE_ONLY___ ══════
+2016-02-18 10:43:20,834 INFO     ___FILE_ONLY___ ══════
+2016-02-18 10:43:20,834 INFO     ___FILE_ONLY___ ══════
+2016-02-18 10:43:20,897 INFO     ___FILE_ONLY___ ═
+2016-02-18 10:43:21,017 INFO     ___FILE_ONLY___ ═
+2016-02-18 10:43:21,068 INFO     ___FILE_ONLY___ ═
+2016-02-18 10:43:21,213 INFO     ___FILE_ONLY___ ═
+2016-02-18 10:43:21,280 INFO     ___FILE_ONLY___ ═
+2016-02-18 10:43:21,423 INFO     ___FILE_ONLY___ ═
+2016-02-18 10:43:21,491 INFO     ___FILE_ONLY___ ═
+2016-02-18 10:43:21,550 INFO     ___FILE_ONLY___ ═
+2016-02-18 10:43:21,631 INFO     ___FILE_ONLY___ ═
+2016-02-18 10:43:21,753 INFO     ___FILE_ONLY___ ═
+2016-02-18 10:43:21,801 INFO     ___FILE_ONLY___ ═
+2016-02-18 10:43:21,876 INFO     ___FILE_ONLY___ ═
+2016-02-18 10:43:22,000 INFO     ___FILE_ONLY___ ═
+2016-02-18 10:43:22,117 INFO     ___FILE_ONLY___ ═
+2016-02-18 10:43:22,204 INFO     ___FILE_ONLY___ ═
+2016-02-18 10:43:22,271 INFO     ___FILE_ONLY___ ═
+2016-02-18 10:43:22,344 INFO     ___FILE_ONLY___ ═
+2016-02-18 10:43:22,415 INFO     ___FILE_ONLY___ ═
+2016-02-18 10:43:22,483 INFO     ___FILE_ONLY___ ═
+2016-02-18 10:43:23,003 INFO     ___FILE_ONLY___ ═
+2016-02-18 10:43:23,202 INFO     ___FILE_ONLY___ ═
+2016-02-18 10:43:23,342 INFO     ___FILE_ONLY___ ═
+2016-02-18 10:43:23,534 INFO     ___FILE_ONLY___ ═
+2016-02-18 10:43:23,702 INFO     ___FILE_ONLY___ ═
+2016-02-18 10:43:24,009 INFO     ___FILE_ONLY___ ═
+2016-02-18 10:43:24,147 INFO     ___FILE_ONLY___ ═
+2016-02-18 10:43:24,269 INFO     ___FILE_ONLY___ ═
+2016-02-18 10:43:24,390 INFO     ___FILE_ONLY___ ═
+2016-02-18 10:43:24,536 INFO     ___FILE_ONLY___ ═
+2016-02-18 10:43:24,675 INFO     ___FILE_ONLY___ ═
+2016-02-18 10:43:24,851 INFO     ___FILE_ONLY___ ═
+2016-02-18 10:43:24,903 INFO     ___FILE_ONLY___ ═
+2016-02-18 10:43:24,959 INFO     ___FILE_ONLY___ ═
+2016-02-18 10:43:25,045 INFO     ___FILE_ONLY___ ═
+2016-02-18 10:43:25,164 INFO     ___FILE_ONLY___ ═
+2016-02-18 10:43:25,271 INFO     ___FILE_ONLY___ ═
+2016-02-18 10:43:25,364 INFO     ___FILE_ONLY___ ═
+2016-02-18 10:43:25,444 INFO     ___FILE_ONLY___ ═
+2016-02-18 10:43:25,518 INFO     ___FILE_ONLY___ ═
+2016-02-18 10:43:25,660 INFO     ___FILE_ONLY___ ═
+2016-02-18 10:43:25,781 INFO     ___FILE_ONLY___ ═
+2016-02-18 10:43:25,896 INFO     ___FILE_ONLY___ ═
+2016-02-18 10:43:25,896 INFO     ___FILE_ONLY___ ╝
+2016-02-18 10:43:25,915 INFO     ___FILE_ONLY___ ╠════════════════════════════════════════════════════════════╣
+
+2016-02-18 10:43:25,915 INFO     ___FILE_ONLY___ ╠═ Installing: kubectl                                      ═╣
+
+2016-02-18 10:43:25,915 INFO     ___FILE_ONLY___ ╚
+2016-02-18 10:43:25,922 INFO     ___FILE_ONLY___ ════════════════════════════════════════════════════════════
+2016-02-18 10:43:25,922 INFO     ___FILE_ONLY___ ╝
+2016-02-18 10:43:25,922 INFO     ___FILE_ONLY___ ╠════════════════════════════════════════════════════════════╣
+
+2016-02-18 10:43:25,922 INFO     ___FILE_ONLY___ ╠═ Installing: kubectl (Mac OS X, x86_64)                   ═╣
+
+2016-02-18 10:43:25,922 INFO     ___FILE_ONLY___ ╚
+2016-02-18 10:43:27,437 INFO     ___FILE_ONLY___ ═
+2016-02-18 10:43:27,975 INFO     ___FILE_ONLY___ ═
+2016-02-18 10:43:28,417 INFO     ___FILE_ONLY___ ═
+2016-02-18 10:43:28,796 INFO     ___FILE_ONLY___ ═
+2016-02-18 10:43:29,185 INFO     ___FILE_ONLY___ ═
+2016-02-18 10:43:29,549 INFO     ___FILE_ONLY___ ═
+2016-02-18 10:43:29,894 INFO     ___FILE_ONLY___ ═
+2016-02-18 10:43:30,195 INFO     ___FILE_ONLY___ ═
+2016-02-18 10:43:30,516 INFO     ___FILE_ONLY___ ═
+2016-02-18 10:43:30,886 INFO     ___FILE_ONLY___ ═
+2016-02-18 10:43:31,291 INFO     ___FILE_ONLY___ ═
+2016-02-18 10:43:31,611 INFO     ___FILE_ONLY___ ═
+2016-02-18 10:43:32,329 INFO     ___FILE_ONLY___ ═
+2016-02-18 10:43:32,895 INFO     ___FILE_ONLY___ ═
+2016-02-18 10:43:33,359 INFO     ___FILE_ONLY___ ═
+2016-02-18 10:43:33,738 INFO     ___FILE_ONLY___ ═
+2016-02-18 10:43:34,098 INFO     ___FILE_ONLY___ ═
+2016-02-18 10:43:34,451 INFO     ___FILE_ONLY___ ═
+2016-02-18 10:43:34,789 INFO     ___FILE_ONLY___ ═
+2016-02-18 10:43:35,101 INFO     ___FILE_ONLY___ ═
+2016-02-18 10:43:35,384 INFO     ___FILE_ONLY___ ═
+2016-02-18 10:43:35,649 INFO     ___FILE_ONLY___ ═
+2016-02-18 10:43:35,905 INFO     ___FILE_ONLY___ ═
+2016-02-18 10:43:36,124 INFO     ___FILE_ONLY___ ═
+2016-02-18 10:43:36,353 INFO     ___FILE_ONLY___ ═
+2016-02-18 10:43:36,578 INFO     ___FILE_ONLY___ ═
+2016-02-18 10:43:36,840 INFO     ___FILE_ONLY___ ═
+2016-02-18 10:43:37,046 INFO     ___FILE_ONLY___ ═
+2016-02-18 10:43:37,248 INFO     ___FILE_ONLY___ ═
+2016-02-18 10:43:37,402 INFO     ___FILE_ONLY___ ═
+2016-02-18 10:43:37,771 INFO     ___FILE_ONLY___ ═══════════════
+2016-02-18 10:43:38,104 INFO     ___FILE_ONLY___ ═══════════════
+2016-02-18 10:43:38,104 INFO     ___FILE_ONLY___ ╝
+2016-02-18 10:43:38,114 INFO     ___FILE_ONLY___ ╠════════════════════════════════════════════════════════════╣
+
+2016-02-18 10:43:38,114 INFO     ___FILE_ONLY___ ╠═ Creating backup and activating new installation          ═╣
+
+2016-02-18 10:43:38,114 INFO     ___FILE_ONLY___ ╚
+2016-02-18 10:43:38,114 DEBUG    root            Attempting to move directory [/Users/jonesvitolo/Projects/google-cloud-sdk] to [/Users/jonesvitolo/Projects/google-cloud-sdk.staging/.install/.backup]
+2016-02-18 10:43:38,115 INFO     ___FILE_ONLY___ ══════════════════════════════
+2016-02-18 10:43:38,115 DEBUG    root            Attempting to move directory [/Users/jonesvitolo/Projects/google-cloud-sdk.staging] to [/Users/jonesvitolo/Projects/google-cloud-sdk]
+2016-02-18 10:43:38,116 INFO     ___FILE_ONLY___ ══════════════════════════════
+2016-02-18 10:43:38,116 INFO     ___FILE_ONLY___ ╝
+
+2016-02-18 10:43:38,172 DEBUG    root            Updating notification cache...
+2016-02-18 10:43:38,173 INFO     ___FILE_ONLY___ 
+
+2016-02-18 10:43:38,173 INFO     ___FILE_ONLY___ Performing post processing steps...
+2016-02-18 10:43:38,174 DEBUG    root            Executing command: ['/usr/bin/python', '-S', u'/Users/jonesvitolo/Projects/google-cloud-sdk/lib/gcloud.py', u'components', u'post-process']
+2016-02-18 10:43:40,620 DEBUG    ___FILE_ONLY___ Compiling /Users/jonesvitolo/Projects/google-cloud-sdk/platform/gsutil/third_party/httplib2/python3/httplib2/__init__.py ...
+  File "/Users/jonesvitolo/Projects/google-cloud-sdk/platform/gsutil/third_party/httplib2/python3/httplib2/__init__.py", line 347
+    print('%s:' % h, end=' ', file=self._fp)
+                        ^
+SyntaxError: invalid syntax
+
+
+2016-02-18 10:43:40,621 DEBUG    ___FILE_ONLY___ 
+2016-02-18 10:43:40,622 INFO     ___FILE_ONLY___ 
+Update done!
+
+
+2016-02-18 10:43:40,628 INFO     root            Display format "none".
+2016-02-18 10:43:40,701 DEBUG    root            Metrics reporting process started...

@@ -5,10 +5,10 @@ source $HOME/.shell/bundles
 source $HOME/.sensitive
 source $HOME/.shell/options
 source $HOME/.shell/path
-#source $HOME/.shell/managers
+source $HOME/.shell/managers
 source $HOME/.shell/aliases
 source $HOME/.shell/functions
-#source $HOME/.shell/completion
+source $HOME/.shell/completion
 
 # TERMINAL THEME
 # https://github.com/chriskempson/base16-shell
