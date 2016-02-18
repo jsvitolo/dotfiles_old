@@ -1,6 +1,6 @@
 # dotfiles
 
-Install
+##Install
 
 git clone git@github.com:jsvitolo/dotfiles.git ~/.dotfiles
 
