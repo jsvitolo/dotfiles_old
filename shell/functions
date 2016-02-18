@@ -1,0 +1,15 @@
+#!/bib/sh
+
+# Google it
+google() {
+  local term="$@"
+  local url="http://www.google.com/search?q=${term// /+}"
+  $BROWSER "$url"
+}
+
+# Github
+github() {
+  local term="$@"
+  local url="http://www.github.com/${term// /+}"
+  $BROWSER "$url"
+}

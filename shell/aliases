@@ -1,0 +1,15 @@
+alias rm='rm -i'
+
+alias df='df -h'
+alias du='du -h'
+
+alias ls='ls -lh --color=tty'
+alias ll='ls -lah --color=tty'
+alias la='ls -A'
+alias l='ls -CF'
+
+alias e='$EDITOR'
+
+if [[ "$OSTYPE" == "darwin"* ]]; then
+  alias cask='brew cask'
+fi

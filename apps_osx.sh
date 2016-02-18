@@ -23,9 +23,9 @@ brew install coreutils
 brew install tree
 brew cask install iterm2-beta
 brew install htop-osx
+brew cask install vagrant
 
 # Google
-brew install Caskroom/cask/google-chrome
 brew install Caskroom/versions/google-chrome-canary
 
 # Link apps
