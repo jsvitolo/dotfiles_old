@@ -1,0 +1,18 @@
+# ZSH
+DISABLE_AUTO_UPDATE="true"
+
+# SHELL
+PROFILE="$HOME/.zshrc"
+
+# LOCALE
+export LC_ALL=en_US.UTF-8
+export LANG=en_US.UTF-8
+
+# GLOBAL
+export EDITOR="emacs"
+export GIT_EDITOR="emacs"
+
+# TMUX
+# https://github.com/robbyrussell/oh-my-zsh/wiki/Plugins#tmux
+export ZSH_TMUX_AUTOSTART="true"
+export ZSH_TMUX_AUTOSTART_ONCE="true"

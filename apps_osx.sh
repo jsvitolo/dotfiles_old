@@ -20,3 +20,16 @@ brew tap caskroom/versions
 brew tap choppsv1/term24
 
 brew install coreutils
+brew install tree
+brew cask install iterm2-beta
+brew install htop-osx
+
+# Google
+brew install Caskroom/cask/google-chrome
+brew install Caskroom/versions/google-chrome-canary
+
+# Link apps
+brew linkapps
+
+# Remove outdated versions from the cellar.
+brew cleanup
