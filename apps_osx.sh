@@ -8,6 +8,10 @@ sudo -v
 # Keep-alive: update existing `sudo` time stamp until the script has finished.
 while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
 
+#install homebrew
+ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+
+
 # Make sure we’re using the latest Homebrew.
 brew update
 
@@ -29,7 +33,7 @@ brew install pgcli
 
 # Docker
 brew install https://raw.githubusercontent.com/Homebrew/homebrew/658b09d6767bd22cb38d06982d6b50b53b9e3f61/Library/Formula/docker.rb
-brew cask install docker-compose
+#brew cask install docker-compose
 
 # Google
 brew install Caskroom/versions/google-chrome-canary

@@ -1,6 +1,0 @@
-2016-02-18 10:46:21,287 DEBUG    root            Loaded Command Group: ['gcloud', 'config']
-2016-02-18 10:46:21,291 DEBUG    root            Loaded Command Group: ['gcloud', 'config', 'set']
-2016-02-18 10:46:21,294 DEBUG    root            Running gcloud.config.set with Namespace(__calliope_internal_deepest_parser=ArgumentParser(prog='gcloud.config.set', usage=None, description='Set the value for an option, so that Cloud SDK tools can use them as\nconfiguration.', version=None, formatter_class=<class 'argparse.HelpFormatter'>, conflict_handler='error', add_help=False), account=None, authority_selector=None, authorization_token_file=None, cmd_func=<bound method Command.Run of <googlecloudsdk.calliope.backend.Command object at 0x101525a90>>, command_path=['gcloud', 'config', 'set'], configuration=None, document=None, format=None, h=None, help=None, http_timeout=None, installation=False, log_http=None, project=None, property='project', quiet=None, scope=None, trace_email=None, trace_log=False, trace_token=None, user_output_enabled=None, value='sisprev-cloud', verbosity=None, version=None).
-2016-02-18 10:46:21,295 WARNING  root            Creating and activating new configuration [default].
-2016-02-18 10:46:21,303 INFO     root            Display format "default".
-2016-02-18 10:46:21,351 DEBUG    root            Metrics reporting process started...

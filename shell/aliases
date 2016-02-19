@@ -10,6 +10,7 @@ alias l='ls -CF'
 
 alias e='$EDITOR'
 
+alias tmuxr='tmux source-file ~/.tmux.conf'
 
 # docker
 alias dimgs='docker images'
