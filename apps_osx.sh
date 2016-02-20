@@ -25,11 +25,13 @@ brew tap choppsv1/term24
 
 brew install coreutils
 brew install tree
+brew install gnu-sed --with-default-names
 brew cask install iterm2-beta
 brew install htop-osx
 brew cask install vagrant
 brew cask install vmware-fusion7
 brew install pgcli
+brew install emacs --HEAD
 
 # Docker
 brew install https://raw.githubusercontent.com/Homebrew/homebrew/658b09d6767bd22cb38d06982d6b50b53b9e3f61/Library/Formula/docker.rb

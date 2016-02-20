@@ -7,4 +7,7 @@ if [[ "$OSTYPE" == "darwin"* ]]; then
 
   #fzf
   [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+  export MANPATH=/usr/local/opt/gnu-sed/libexec/gnuman:$MANPATH
+
 fi
