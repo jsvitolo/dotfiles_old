@@ -1,3 +1,4 @@
 config/gcloud
 config/pgcli
 config/configstore
+.ruby-version
