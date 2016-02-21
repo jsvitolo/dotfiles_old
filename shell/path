@@ -1,5 +1,5 @@
 if [[ "$OSTYPE" == "darwin"* ]]; then
-  export PATH="/.bin:./bin:/usr/local/opt/coreutils/libexec/gnubin:$PATH"
+  #export PATH="/.bin:./bin:/usr/local/opt/coreutils/libexec/gnubin:$PATH"
   export BROWSER="/usr/bin/open"
 
   #Docker CoreOs
