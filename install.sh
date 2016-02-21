@@ -19,7 +19,24 @@ function install() {
 
   git clone https://github.com/tarjoilija/zgen.git ~/.zgen
 
+  mkdir -p ~/.tmux/plugins
+  mkdir -p ~/.tmux/themes
+  git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+  git clone https://github.com/seebi/tmux-colors-solarized.git ~/.tmux/themes/solarized
 
+  git clone https://github.com/chriskempson/base16-shell.git ~/.config/base16-shell
+
+  git clone https://github.com/sstephenson/rbenv.git ~/.rbenv
+  mkdir ~/.rbenv/plugins
+  git clone https://github.com/sstephenson/ruby-build.git ~/.rbenv/plugins/ruby-build
+  git clone https://github.com/rkh/rbenv-update.git ~/.rbenv/plugins/rbenv-update
+
+  git clone https://github.com/creationix/nvm.git ~/.nvm
+
+  #git clone https://github.com/gcuisinier/jenv.git ~/.jenv
+
+  git clone https://github.com/mururu/exenv.git ~/.exenv
+  git clone https://github.com/mururu/elixir-build.git ~/.exenv/plugins/elixir-build
 }
 
 install

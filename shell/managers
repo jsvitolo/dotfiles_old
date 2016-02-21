@@ -1,3 +1,8 @@
+# PATHS
+export RBENV_ROOT="$HOME/.rbenv"
+export EXENV_ROOT="$HOME/.exenv"
+export PATH="$RBENV_ROOT/bin:$EXENV_ROOT/bin:$PATH"
+
 # Google Cloud
 
 # The next line updates PATH for the Google Cloud SDK.
@@ -7,5 +12,14 @@ source '/Users/jonesvitolo/Projects/google-cloud-sdk/path.zsh.inc'
 source '/Users/jonesvitolo/Projects/google-cloud-sdk/completion.zsh.inc'
 
 
-#rbenv
-if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
+# RBENV
+which rbenv > /dev/null && eval "$(rbenv init -)"
+
+# EXENV
+which exenv > /dev/null && eval "$(exenv init -)"
+
+# NVM
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"
+
+
