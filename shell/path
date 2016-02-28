@@ -1,6 +1,8 @@
 if [[ "$OSTYPE" == "darwin"* ]]; then
-  #export PATH="/.bin:./bin:/usr/local/opt/coreutils/libexec/gnubin:$PATH"
+#  export PATH="/.bin:./bin:/usr/local/opt/coreutils/libexec/gnubin"
   export BROWSER="/usr/bin/open"
+
+export PATH=$HOME/.bin:./bin:/usr/local/bin:/usr/local/opt/coreutils/libexec/gnubin:/usr/local/share/npm/bin:/usr/local/lib:/usr/local/sbin:/usr/bin:/usr/sbin:/bin:/sbin:/opt/X11/bin:/usr/X11/bin:/opt/local/bin
 
   #Docker CoreOs
   export DOCKER_HOST=172.17.8.101:2375
@@ -8,6 +10,6 @@ if [[ "$OSTYPE" == "darwin"* ]]; then
   #fzf
   [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
-  export MANPATH=/usr/local/opt/gnu-sed/libexec/gnuman:$MANPATH
+  # export MANPATH=/usr/local/opt/gnu-sed/libexec/gnuman:$MANPATH
 
 fi
