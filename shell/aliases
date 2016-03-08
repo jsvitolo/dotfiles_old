@@ -24,3 +24,6 @@ alias dcpud='docker-compose up -d'
 if [[ "$OSTYPE" == "darwin"* ]]; then
   alias cask='brew cask'
 fi
+
+# servidor casa plex
+alias plex='ssh pi@192.168.0.16'
