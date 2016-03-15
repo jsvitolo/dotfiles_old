@@ -20,3 +20,10 @@ gconsole() {
   local url="https://console.developers.google.com/home/dashboard?project=${term// /+}"
   $BROWSER "$url"
 }
+
+# Siprev no dell
+siprev() {
+    local term="$@"
+    local url="http://192.168.0.115:8089/SIPREV"
+    $BROWSER "$url"
+}
