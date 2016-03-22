@@ -24,6 +24,12 @@ gconsole() {
 # Siprev no dell
 siprev() {
     local term="$@"
-    local url="http://192.168.0.115:8089/SIPREV"
+    local url="http://192.168.0.107:8089/SIPREV"
+    $BROWSER "$url"
+}
+
+siprevwin() {
+    local term="$@"
+    local url="http://192.168.0.112:8089/SIPREV"
     $BROWSER "$url"
 }

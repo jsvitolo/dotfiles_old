@@ -29,4 +29,4 @@ fi
 alias plex='ssh pi@192.168.0.16'
 
 #estacao dell
-alias dell='ssh dell@192.168.0.115'
+alias dell='ssh dell@192.168.0.107'

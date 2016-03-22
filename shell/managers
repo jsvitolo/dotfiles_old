@@ -16,7 +16,10 @@ source '/Users/jonesvitolo/Projects/infra/google-cloud-sdk/completion.zsh.inc'
 which rbenv > /dev/null && eval "$(rbenv init -)"
 
 # EXENV
-which exenv > /dev/null && eval "$(exenv init -)"
+#which exenv > /dev/null && eval "$(exenv init -)"
+
+# KIEX
+[[ -s "$HOME/.kiex/scripts/kiex" ]] && source "$HOME/.kiex/scripts/kiex"
 
 # NVM
 export NVM_DIR="$HOME/.nvm"
