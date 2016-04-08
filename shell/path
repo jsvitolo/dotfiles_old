@@ -6,6 +6,8 @@ export PATH=$HOME/.bin:./bin:/usr/local/bin:/usr/local/opt/coreutils/libexec/gnu
 
   #Docker CoreOs
   export DOCKER_HOST=172.17.8.101:2375
+  # DELL
+  #export DOCKER_HOST=192.168.0.107:2375
 
   #fzf
   [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
