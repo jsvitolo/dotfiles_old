@@ -33,7 +33,7 @@ brew cask install vmware-fusion7
 brew install pgcli
 brew install emacs --HEAD
 brew install watchman
-
+brew install tmux --HEAD
 # ssh tools
 brew install ssh-copy-id
 # Docker
