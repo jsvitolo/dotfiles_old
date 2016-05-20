@@ -6,17 +6,15 @@ export PATH="$RBENV_ROOT/bin:$EXENV_ROOT/bin:$PATH"
 # Google Cloud
 
 # The next line updates PATH for the Google Cloud SDK.
-source '/Users/jonesvitolo/Projects/infra/google-cloud-sdk/path.zsh.inc'
+source '/Users/jsvitolo/Projects/infra/google-cloud-sdk/path.zsh.inc'
 
 # The next line enables shell command completion for gcloud.
-source '/Users/jonesvitolo/Projects/infra/google-cloud-sdk/completion.zsh.inc'
+source '/Users/jsvitolo/Projects/infra/google-cloud-sdk/completion.zsh.inc'
 
 
 # RBENV
 which rbenv > /dev/null && eval "$(rbenv init -)"
 
-# EXENV
-#which exenv > /dev/null && eval "$(exenv init -)"
 
 # KIEX
 [[ -s "$HOME/.kiex/scripts/kiex" ]] && source "$HOME/.kiex/scripts/kiex"
@@ -24,3 +22,6 @@ which rbenv > /dev/null && eval "$(rbenv init -)"
 # NVM
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"
+
+# KERL
+. ~/.kerl/installations/erlang-18.3/activate

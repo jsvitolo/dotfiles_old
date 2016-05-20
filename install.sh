@@ -35,8 +35,8 @@ function install() {
 
   #git clone https://github.com/gcuisinier/jenv.git ~/.jenv
 
-  git clone https://github.com/mururu/exenv.git ~/.exenv
-  git clone https://github.com/mururu/elixir-build.git ~/.exenv/plugins/elixir-build
+#  git clone https://github.com/mururu/exenv.git ~/.exenv
+#  git clone https://github.com/mururu/elixir-build.git ~/.exenv/plugins/elixir-build
 }
 
 install

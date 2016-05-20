@@ -12,9 +12,4 @@ if [[ "$OSTYPE" == "darwin"* ]]; then
 
   # export MANPATH=/usr/local/opt/gnu-sed/libexec/gnuman:$MANPATH
 
-  # exenv elixir
-  export PATH="$HOME/.exenv/bin:$PATH"
-  eval "$(exenv init -)"
-
-  
 fi
