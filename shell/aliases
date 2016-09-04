@@ -26,7 +26,7 @@ if [[ "$OSTYPE" == "darwin"* ]]; then
 fi
 
 # servidor casa plex
-alias plex='ssh pi@192.168.0.16'
+alias plex='ssh adminuser@192.168.0.17'
 
 #estacao dell
 alias dell='ssh dell@192.168.0.107'
