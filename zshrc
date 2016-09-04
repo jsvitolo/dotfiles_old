@@ -16,3 +16,6 @@ BASE16_SCHEME="eighties"
 BASE16_SHELL="$HOME/.config/base16-shell/base16-$BASE16_SCHEME.dark.sh"
 source $BASE16_SHELL
 export TERM=xterm-256color
+export PYENV_ROOT="$HOME/.pyenv"
+export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init -)"
