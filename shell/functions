@@ -33,3 +33,9 @@ siprevwin() {
     local url="http://192.168.0.112:8089/SIPREV"
     $BROWSER "$url"
 }
+
+transmission() {
+	local term="$@"
+	local url="http://192.168.0.17:9091"
+	$BROWSER "$url"
+}
