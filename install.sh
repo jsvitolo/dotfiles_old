@@ -33,7 +33,7 @@ function install() {
 
   git clone https://github.com/creationix/nvm.git ~/.nvm
 
-  #git clone https://github.com/gcuisinier/jenv.git ~/.jenv
+  git clone https://github.com/gcuisinier/jenv.git ~/.jenv
   git clone https://github.com/yyuu/pyenv.git ~/.pyenv
 
 #  git clone https://github.com/mururu/exenv.git ~/.exenv
