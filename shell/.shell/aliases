@@ -10,7 +10,6 @@ alias du='du -h'
 
 alias e='$EDITOR'
 
-alias tmuxr='tmux source-file ~/.tmux.conf'
 
 # docker
 alias dimgs='docker images'
@@ -26,7 +25,4 @@ if [[ "$OSTYPE" == "darwin"* ]]; then
 fi
 
 # servidor casa plex
-alias plex='ssh adminuser@192.168.0.17'
-
-#estacao dell
-alias dell='ssh dell@192.168.0.107'
+alias plex='ssh adminuser@192.168.0.210'
