@@ -40,6 +40,8 @@ brew install zsh
 brew cask install iterm2-beta
 brew cask install font-fira-code
 brew cask install font-source-code-pro
+brew cask install slack
+brew cask install google-chrome
 
 
 # Remove outdated versions from the cellar.
