@@ -1,7 +1,7 @@
 # PATHS
-export RBENV_ROOT="$HOME/.rbenv"
-export EXENV_ROOT="$HOME/.exenv"
-export PATH="$RBENV_ROOT/bin:$EXENV_ROOT/bin:$PATH"
+#export RBENV_ROOT="$HOME/.rbenv"
+#export EXENV_ROOT="$HOME/.exenv"
+#export PATH="$RBENV_ROOT/bin:$EXENV_ROOT/bin:$PATH"
 
 # Google Cloud
 
@@ -13,15 +13,18 @@ export PATH="$RBENV_ROOT/bin:$EXENV_ROOT/bin:$PATH"
 
 
 # RBENV
-which rbenv > /dev/null && eval "$(rbenv init -)"
+#which rbenv > /dev/null && eval "$(rbenv init -)"
 
 
 # KIEX
 #[[ -s "$HOME/.kiex/scripts/kiex" ]] && source "$HOME/.kiex/scripts/kiex"
 
 # NVM
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"
+#export NVM_DIR="$HOME/.nvm"
+#[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"
 
 # KERL
 #. ~/.kerl/installations/erlang-18.3/activate
+
+. $HOME/.asdf/asdf.sh
+. $HOME/.asdf/completions/asdf.bash

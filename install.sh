@@ -1,43 +1,40 @@
 #!/bin/sh
 
-# https://github.com/thoughtbot/dotfiles/blob/master/install.sh
+touch ~/.sensitive
 
-function install() {
-  for name in *; do
-    target="$HOME/.$name"
+git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
+~/.fzf/install
 
-    if [ "$name" != 'install.sh' ] && [ "$name" != 'README.md' ] && [ "$name" != 'oh-my-zsh' ]; then
-      rm -rf "$target"
-      echo "ln -s "$PWD/$name" "$target""
-      ln -s "$PWD/$name" "$target"
-    fi
-  done
+git clone https://github.com/tarjoilija/zgen.git ~/.zgen
 
-  touch ~/.sensitive
+stow colors
+stow erlang
+stow git
+stow ruby
+stow shell
+stow spacemacs-dir
+stow tmux
+stow zsh
 
-  cp -R ~/.dotfiles/oh-my-zsh/custom ~/.oh-my-zsh/
 
-  git clone https://github.com/tarjoilija/zgen.git ~/.zgen
+mkdir -p ~/.tmux/plugins
+mkdir -p ~/.tmux/themes
 
-  mkdir -p ~/.tmux/plugins
-  mkdir -p ~/.tmux/themes
-  git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
-  git clone https://github.com/seebi/tmux-colors-solarized.git ~/.tmux/themes/solarized
+git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+git clone https://github.com/seebi/tmux-colors-solarized.git ~/.tmux/themes/solarized
 
-  git clone https://github.com/chriskempson/base16-shell.git ~/.config/base16-shell
+git clone https://github.com/chriskempson/base16-shell.git ~/.config/base16-shell
 
-  git clone https://github.com/sstephenson/rbenv.git ~/.rbenv
-  mkdir ~/.rbenv/plugins
-  git clone https://github.com/sstephenson/ruby-build.git ~/.rbenv/plugins/ruby-build
-  git clone https://github.com/rkh/rbenv-update.git ~/.rbenv/plugins/rbenv-update
+echo "/usr/local/bin/zsh" | sudo tee -a /etc/shells
+chsh -s /usr/local/bin/zsh
 
-  git clone https://github.com/creationix/nvm.git ~/.nvm
+#SPACEMACS
+git clone https://github.com/syl20bnr/spacemacs ~/.emacs.d
 
-  git clone https://github.com/gcuisinier/jenv.git ~/.jenv
-  git clone https://github.com/yyuu/pyenv.git ~/.pyenv
+git clone https://github.com/asdf-vm/asdf.git ~/.asdf --branch v0.3.0
 
-#  git clone https://github.com/mururu/exenv.git ~/.exenv
-#  git clone https://github.com/mururu/elixir-build.git ~/.exenv/plugins/elixir-build
-}
+source ~/.zshrc
 
-install
+asdf plugin-add ruby https://github.com/asdf-vm/asdf-ruby
+asdf plugin-add erlang https://github.com/asdf-vm/asdf-erlang
+asdf plugin-add elixir https://github.com/asdf-vm/asdf-elixir

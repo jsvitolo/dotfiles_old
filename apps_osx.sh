@@ -19,32 +19,28 @@ brew update
 brew upgrade
 
 # Brew Extras
-brew install caskroom/cask/brew-cask
 brew tap caskroom/versions
 brew tap choppsv1/term24
+brew tap caskroom/fonts
+brew tap d12frosted/emacs-plus
 
-#brew install coreutils
 brew install tree
-#brew install gnu-sed --with-default-names
-brew cask install iterm2-beta
 brew install htop-osx
-#brew cask install vagrant
-#brew cask install vmware-fusion7
-#brew install pgcli
-brew install emacs --HEAD
+brew install pgcli
 brew install watchman
 brew install tmux --HEAD
-# ssh tools
-#brew install ssh-copy-id
-# Docker
-#brew install https://raw.githubusercontent.com/Homebrew/homebrew/658b09d6767bd22cb38d06982d6b50b53b9e3f61/Library/Formula/docker.rb
-#brew cask install docker-compose
+brew install openssl
+brew install stow
+brew install earn
+brew install emacs-plus
+brew install reattach-to-user-namespace
+brew install zsh
 
-# Google
-#brew install Caskroom/versions/google-chrome-canary
 
-# Link apps
-brew linkapps
+brew cask install iterm2-beta
+brew cask install font-fira-code
+brew cask install font-source-code-pro
+
 
 # Remove outdated versions from the cellar.
 brew cleanup
