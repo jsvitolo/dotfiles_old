@@ -35,6 +35,8 @@ brew install earn
 brew install emacs-plus
 brew install reattach-to-user-namespace
 brew install zsh
+brew install coreutils
+brew install gnupg
 
 
 brew cask install iterm2-beta

@@ -5,13 +5,16 @@ alias rm='rm -i'
 
 alias df='df -h'
 alias du='du -h'
+alias dus='du -hs'
 
-#alias ls='ls -lh --color=tty'
-#alias ll='ls -lah --color=tty'
-#alias la='ls -A'
-#alias l='ls -CF'
+alias ls='ls -lh --color=tty'
+alias ll='ls -lah --color=tty'
+alias la='ls -A'
+alias l='ls -CF'
+alias lsdir="ls -d */  | cut -f1 -d'/'"
 
 alias e='$EDITOR'
+alias et="$EDITOR -nw"
 
 
 # docker

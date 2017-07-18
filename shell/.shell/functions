@@ -4,7 +4,7 @@
 google() {
   local term="$@"
   local url="http://www.google.com/search?q=${term// /+}"
-  $BROWSER "$url"
+  $BROWSER -a Google\ Chrome "$url"
 }
 
 # Github
@@ -21,15 +21,16 @@ gconsole() {
   $BROWSER "$url"
 }
 
-# Siprev no dell
-siprev() {
+# Jenkins
+jenkins() {
     local term="$@"
-    local url="http://192.168.0.107:8089/SIPREV"
-    $BROWSER "$url"
+    local url="http://ci.sisprev.net.br/login?from=%2Fmanage"
+    $BROWSER -a Google\ Chrome "$url"
 }
 
-siprevwin() {
+# Reddit
+reddit() {
     local term="$@"
-    local url="http://192.168.0.112:8089/SIPREV"
-    $BROWSER "$url"
+    local url="https://www.reddit.com/r/${term// /+}/"
+    $BROWSER -a Google\ Chrome "$url"
 }

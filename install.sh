@@ -33,6 +33,10 @@ git clone https://github.com/syl20bnr/spacemacs ~/.emacs.d
 
 git clone https://github.com/asdf-vm/asdf.git ~/.asdf --branch v0.3.0
 
+rm -rf ~/.zshrc
+
+stow zsh
+
 source ~/.zshrc
 
 asdf plugin-add ruby https://github.com/asdf-vm/asdf-ruby
