@@ -37,11 +37,13 @@ brew install reattach-to-user-namespace
 brew install zsh
 brew install coreutils
 brew install gnupg
+brew install ag
 
 
 brew cask install iterm2-beta
 brew cask install font-fira-code
 brew cask install font-source-code-pro
+brew cask install font-sourcecodepro-nerd-font
 brew cask install slack
 brew cask install google-chrome
 
