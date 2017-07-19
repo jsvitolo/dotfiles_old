@@ -3,10 +3,9 @@
 if [[ "$OSTYPE" == "darwin"* ]]; then
    export BROWSER="/usr/bin/open"
 
-   #export PATH="/usr/local/bin:/usr/bin:/bin:/usr/local/opt/coreutils/libexec/gnubin:$PATH"
    export PATH="/usr/local/opt/coreutils/libexec/gnubin:$PATH"
-
    export MANPATH="/usr/local/opt/coreutils/libexec/gnuman:$MANPATH"
+
   #fzf
   [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 fi
