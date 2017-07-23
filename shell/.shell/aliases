@@ -31,6 +31,9 @@ alias dcp='docker-compose'
 alias dcpu='docker-compose up'
 alias dcpud='docker-compose up -d'
 
+# ruby
+alias be='bundle exec'
+
 if [[ "$OSTYPE" == "darwin"* ]]; then
   alias cask='brew cask'
 fi
