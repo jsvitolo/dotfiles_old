@@ -41,3 +41,6 @@ fi
 
 # servidor casa plex
 alias plex='ssh adminuser@192.168.0.210'
+
+# abrir icloud
+alias icloud='cd ~/Library/Mobile\ Documents/com~apple~CloudDocs'
