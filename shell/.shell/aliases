@@ -16,6 +16,7 @@ alias lsdir="ls -d */  | cut -f1 -d'/'"
 alias lci='colorls -r'
 alias lc='colorls'
 
+# edit colorls config
 alias elc='$EDITOR -nw $(gem which colorls)/../yaml/'
 
 alias e='$EDITOR'
