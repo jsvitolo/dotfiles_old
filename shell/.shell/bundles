@@ -1,3 +1,5 @@
+#!/bin/bash
+
 source "${HOME}/.zgen/zgen.zsh"
 
 if ! zgen saved; then
