@@ -305,6 +305,7 @@ values."
   (setq exec-path-from-shell-arguments '("-l"))
   (setq explicit-shell-file-name "/usr/local/bin/zsh")
   (setq shell-file-name "zsh")
+  (display-time-mode 1)
   "Initialization function for user code.
 It is called immediately after `dotspacemacs/init', before layer configuration
 executes.
@@ -322,6 +323,7 @@ explicitly specified that a variable should be set before a package is loaded,
 you should place your code here."
   (setq neo-window-position 'right)
   (setq-default mac-right-option-modifier nil)
+  (setq-default evil-escape-key-sequence "jk")
   (add-to-list 'auto-mode-alist '("\\.etl$" . ruby-mode))
  )
 
