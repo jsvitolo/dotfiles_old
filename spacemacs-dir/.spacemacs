@@ -140,8 +140,8 @@ values."
    dotspacemacs-colorize-cursor-according-to-state t
    ;; Default font, or prioritized list of fonts. `powerline-scale' allows to
    ;; quickly tweak the mode-line size to make separators look not too crappy.
-   dotspacemacs-default-font '("Fira Code"
-                               :size 13
+   dotspacemacs-default-font '("Inconsolata"
+                               :size 16
                                :weight normal
                                :width normal
                                :powerline-scale 1.1)
@@ -346,6 +346,8 @@ you should place your code here."
 
   (my-setup-indent 2) ; indent 2 spaces width
 
+  (define-coding-system-alias 'utf8 'utf-8)
+
 
   ;; set font
   (custom-set-faces
@@ -354,7 +356,7 @@ you should place your code here."
    ;; Your init file should contain only one such instance.
    ;; If there is more than one, they won't work right.
    )(defun fontify-frame (frame)
-      (set-frame-parameter frame 'font "Fira Code-13"))
+      (set-frame-parameter frame 'font "Inconsolata-16"))
     ;; Fontify current frame
     (fontify-frame nil)
     ;; Fontify any future frames
