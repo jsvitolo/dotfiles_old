@@ -38,6 +38,7 @@ brew install zsh
 brew install coreutils
 brew install gnupg
 brew install ag
+brew install aspell
 
 
 brew cask install iterm2-beta
