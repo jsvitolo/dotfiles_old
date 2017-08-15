@@ -145,13 +145,15 @@
 
 
   ;; set font
-  (custom-set-faces
-   )(defun fontify-frame (frame)
-      (set-frame-parameter frame 'font "Inconsolata-16"))
-    ;; Fontify current frame
-    (fontify-frame nil)
-    ;; Fontify any future frames
-    (push 'fontify-frame after-make-frame-functions)
+ ;;  (custom-set-faces
+ ;;   )(defun fontify-frame (frame)
+ ;;      (set-frame-parameter frame 'font "Inconsolata-16"))
+ ;;    ;; Fontify current frame
+ ;;    (fontify-frame nil)
+ ;;    ;; Fontify any future frames
+ ;;    (push 'fontify-frame after-make-frame-functions)
+  (set-face-attribute 'default nil :family "Source Code Pro")
+  (set-face-attribute 'default nil :height 165)
  )
 
 (custom-set-variables
