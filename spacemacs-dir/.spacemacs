@@ -113,7 +113,7 @@
 
 (defun dotspacemacs/user-config ()
   (autoload 'neotree "neotree" "" t)
-  (setq neo-window-width 60)
+  (setq neo-window-width 50)
   (setq neo-persist-show nil)
   (setq-default mac-right-option-modifier nil)
 
@@ -123,6 +123,8 @@
   (add-to-list 'auto-mode-alist '("\\.etl$" . ruby-mode))
 
   (setq powerline-default-separator 'arrow-fade)
+
+  (global-vi-tilde-fringe-mode -1)
 
   (defun my-setup-indent (n)
   ;; java/c/c++
