@@ -18,7 +18,8 @@
      ruby-on-rails
      elixir
      helm
-     auto-completion
+     (auto-completion :variables
+                      auto-completion-enable-snippets-in-popup t)
      better-defaults
      emacs-lisp
      osx
@@ -53,7 +54,7 @@
    dotspacemacs-themes '(spacemacs-dark
                          spacemacs-light)
    dotspacemacs-colorize-cursor-according-to-state t
-   dotspacemacs-default-font '("Inconsolata"
+   dotspacemacs-default-font '("Fira Code"
                                :size 15
                                :weight normal
                                :width normal
@@ -132,6 +133,9 @@
   (define-key evil-insert-state-map (kbd "M-d") 'evil-mc-undo-all-cursors)
   (define-key evil-normal-state-map (kbd "M-a") 'evil-mc-skip-and-goto-next-match)
 
+  ;; FiraCode and other glyphy fonts
+  (mac-auto-operator-composition-mode)
+
   (defun my-setup-indent (n)
   ;; java/c/c++
   (setq c-basic-offset n)
@@ -145,22 +149,28 @@
   (setq web-mode-indent-offset n) ; web-mode, css in html file
   (setq web-mode-code-indent-offset n) ; web-mode, js code in html file
   (setq css-indent-offset n) ; css-mode
+  (setq typescript-mode-indent-offset n) ; typescript-mode
   )
 
   (my-setup-indent 2) ; indent 2 spaces width
 
   (define-coding-system-alias 'utf8 'utf-8)
+  (set-language-environment "UTF-8")
+  (set-default-coding-systems 'utf-8)
 
   ;; set font
- ;;  (custom-set-faces
- ;;   )(defun fontify-frame (frame)
- ;;      (set-frame-parameter frame 'font "Inconsolata-16"))
- ;;    ;; Fontify current frame
- ;;    (fontify-frame nil)
- ;;    ;; Fontify any future frames
- ;;    (push 'fontify-frame after-make-frame-functions)
-  (set-face-attribute 'default nil :family "Source Code Pro")
-  (set-face-attribute 'default nil :height 175)
+  (custom-set-faces
+   )(defun fontify-frame (frame)
+      (set-frame-parameter frame 'font "Fira Code-13"))
+    ;; Fontify current frame
+    (fontify-frame nil)
+    ;; Fontify any future frames
+    (push 'fontify-frame after-make-frame-functions)
+
+  ;; (set-face-attribute 'default nil :family "Source Code Pro")
+  ;; (set-face-attribute 'default nil :height 175)
+
+  ;; (set-face-attribute 'default nil :font "Fira Code-12")
  )
 
 (custom-set-variables

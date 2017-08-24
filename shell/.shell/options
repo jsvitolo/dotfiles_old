@@ -10,7 +10,7 @@ export LANG=en_US.UTF-8
 
 # GLOBAL
 export EDITOR="emacs"
-export GIT_EDITOR="emacs"
+export GIT_EDITOR="vim"
 
 # TMUX
 # https://github.com/robbyrussell/oh-my-zsh/wiki/Plugins#tmux
