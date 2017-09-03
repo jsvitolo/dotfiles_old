@@ -39,6 +39,8 @@ brew install coreutils
 brew install gnupg
 brew install ag
 brew install aspell
+brew install wxmac
+brew install pyenv
 
 brew cask install emacs-mac-spacemacs-icon
 brew cask install iterm2-beta
