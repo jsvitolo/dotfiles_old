@@ -16,3 +16,8 @@ export GIT_EDITOR="vim"
 # https://github.com/robbyrussell/oh-my-zsh/wiki/Plugins#tmux
 export ZSH_TMUX_AUTOSTART="true"
 export ZSH_TMUX_AUTOSTART_ONCE="true"
+
+
+# POSTGRESQL
+export PGHOST=localhost
+export PGUSER=postgres
