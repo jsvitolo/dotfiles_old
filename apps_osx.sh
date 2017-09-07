@@ -22,7 +22,7 @@ brew upgrade
 brew tap caskroom/versions
 brew tap choppsv1/term24
 brew tap caskroom/fonts
-brew tap d12frosted/emacs-plus
+brew tap railwaycat/emacsmacport
 
 brew install tree
 brew install htop-osx
@@ -32,15 +32,17 @@ brew install tmux --HEAD
 brew install openssl
 brew install stow
 brew install earn
-brew install emacs-plus
+brew install railwaycat/emacsmacport/emacs-mac
 brew install reattach-to-user-namespace
 brew install zsh
 brew install coreutils
 brew install gnupg
 brew install ag
 brew install aspell
+brew install wxmac
+brew install pyenv
 
-
+brew cask install emacs-mac-spacemacs-icon
 brew cask install iterm2-beta
 brew cask install font-fira-code
 brew cask install font-source-code-pro

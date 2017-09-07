@@ -15,6 +15,7 @@ stow shell
 stow spacemacs-dir
 stow tmux
 stow zsh
+stow oh-my-zsh
 
 
 mkdir -p ~/.tmux/plugins
