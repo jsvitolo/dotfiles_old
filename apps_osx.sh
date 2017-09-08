@@ -49,6 +49,7 @@ brew cask install font-source-code-pro
 brew cask install font-sourcecodepro-nerd-font
 brew cask install slack
 brew cask install google-chrome
+brew cask install tower
 
 
 # Remove outdated versions from the cellar.
