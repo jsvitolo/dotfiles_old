@@ -41,6 +41,7 @@ brew install ag
 brew install aspell
 brew install wxmac
 brew install pyenv
+brew install yarn
 
 brew cask install emacs-mac-spacemacs-icon
 brew cask install iterm2-beta
