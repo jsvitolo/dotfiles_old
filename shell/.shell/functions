@@ -23,7 +23,6 @@ gconsole() {
 
 # Jenkins
 jenkins() {
-    local term="$@"
     local url="http://ci.sisprev.net.br/login?from=%2Fmanage"
     $BROWSER -a Google\ Chrome "$url"
 }
@@ -33,4 +32,10 @@ reddit() {
     local term="$@"
     local url="https://www.reddit.com/r/${term// /+}/"
     $BROWSER -a Google\ Chrome "$url"
+}
+
+# Transmission
+transmission() {
+    local url="http://192.168.0.210:9091"
+    $BROWSER "$url"
 }
