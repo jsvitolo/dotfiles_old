@@ -51,6 +51,7 @@ brew cask install font-sourcecodepro-nerd-font
 brew cask install slack
 brew cask install google-chrome
 brew cask install tower
+brew cask install postico
 
 
 # Remove outdated versions from the cellar.
