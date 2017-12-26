@@ -33,7 +33,7 @@ chsh -s /usr/local/bin/zsh
 #SPACEMACS
 git clone https://github.com/syl20bnr/spacemacs ~/.emacs.d
 
-git clone https://github.com/asdf-vm/asdf.git ~/.asdf --branch v0.3.0
+git clone https://github.com/asdf-vm/asdf.git ~/.asdf --branch v0.4.0
 
 rm -rf ~/.zshrc
 
