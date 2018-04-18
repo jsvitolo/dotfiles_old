@@ -7,10 +7,10 @@ alias df='df -h'
 alias du='du -h'
 alias dus='du -hs'
 
-alias ls='ls -lh --color=tty'
-alias ll='ls -lah --color=tty'
-alias la='ls -A'
-alias l='ls -CF'
+#alias ls='ls -lh --color=tty'
+#alias ll='ls -lah --color=tty'
+#alias la='ls -A'
+#alias l='ls -CF'
 alias lsdir="ls -d */  | cut -f1 -d'/'"
 
 alias lci='colorls -r'
@@ -42,5 +42,17 @@ fi
 # servidor casa plex
 alias plex='ssh adminuser@192.168.0.210'
 
+alias remove_link='rm -iv $1' 
+alias compress='tar -czvf $1 $2'
+
+alias copy-content='cat $1 | pbcopy'
+
 # abrir icloud
 alias icloud='cd ~/Library/Mobile\ Documents/com~apple~CloudDocs'
+
+# icons
+alias ls='/opt/coreutils/bin/ls -lh'
+alias ll='/opt/coreutils/bin/ls -lah'
+alias la='/opt/coreutils/bin/ls -A'
+alias l='/opt/coreutils/bin/ls -CF'
+alias lsdir="/opt/coreutils/bin/ls -d */ | cut -f1 -d'/'"

@@ -1,7 +1,11 @@
+#!/usr/bin/env bash
+
 # PATHS
 #export RBENV_ROOT="$HOME/.rbenv"
 #export EXENV_ROOT="$HOME/.exenv"
 #export PATH="$RBENV_ROOT/bin:$EXENV_ROOT/bin:$PATH"
+export PATH="$HOME/.rbenv/bin:$PATH"
+eval "$(rbenv init -)"
 
 # Google Cloud
 

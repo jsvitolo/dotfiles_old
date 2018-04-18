@@ -2,3 +2,10 @@ config/gcloud
 config/pgcli
 config/configstore
 .ruby-version
+config/yarn
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon
+._*
+config/.config/*

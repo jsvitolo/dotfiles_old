@@ -20,7 +20,7 @@ brew upgrade
 
 # Brew Extras
 brew tap caskroom/versions
-brew tap choppsv1/term24
+brew tap chopp:sv1/term24
 brew tap caskroom/fonts
 brew tap railwaycat/emacsmacport
 
@@ -38,18 +38,18 @@ brew install zsh
 brew install coreutils
 brew install gnupg
 brew install ag
-brew install aspell
+brew install aspell --with-lang-en --with-lang-pt_BR
 brew install wxmac
-brew install pyenv
+#brew install pyenv
 brew install yarn
 
 brew cask install emacs-mac-spacemacs-icon
-brew cask install iterm2-beta
+#brew cask install iterm2-beta
 brew cask install font-fira-code
 brew cask install font-source-code-pro
 brew cask install font-sourcecodepro-nerd-font
-brew cask install slack
-brew cask install google-chrome
+#brew cask install slack
+#brew cask install google-chrome
 brew cask install tower
 brew cask install postico
 
