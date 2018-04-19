@@ -1,6 +1,0 @@
-# -*- mode: snippet -*-
-# name: flash dgettext 
-# key: flash
-# --
-|> put_flash(:$1, dgettext("$2", "$3"))
-$0

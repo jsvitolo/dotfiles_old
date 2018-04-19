@@ -1,6 +1,0 @@
-#key : dget
-#contributor : Jones Vitolo <jsvitolo@gmail.com>
-#name :<%= dgettext("...", "...)" %>
-# --
-<%= dgettext("$1", "$2") %>
-$0
