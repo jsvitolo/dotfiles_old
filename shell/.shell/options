@@ -9,14 +9,16 @@ export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
 
 # GLOBAL
-export EDITOR="emacsclient -c --no-wait"
-export GIT_EDITOR="emacsclient -c --no-wait"
+export EDITOR="/Applications/Emacs.app/Contents/MacOS/bin/emacsclient -c --no-wait"
+export GIT_EDITOR="/Applications/Emacs.app/Contents/MacOS/bin/emacsclient -c --no-wait"
 
 # TMUX
 # https://github.com/robbyrussell/oh-my-zsh/wiki/Plugins#tmux
 export ZSH_TMUX_AUTOSTART="true"
 export ZSH_TMUX_AUTOSTART_ONCE="true"
 
+# oh-my-zsh
+export DISABLE_UPDATE_PROMPT=true
 
 # POSTGRESQL
 export PGHOST=localhost

@@ -3,7 +3,6 @@
 touch ~/.sensitive
 
 git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
-~/.fzf/install
 
 git clone https://github.com/tarjoilija/zgen.git ~/.zgen
 
@@ -33,7 +32,7 @@ chsh -s /usr/local/bin/zsh
 #SPACEMACS
 git clone https://github.com/syl20bnr/spacemacs ~/.emacs.d
 
-git clone https://github.com/asdf-vm/asdf.git ~/.asdf --branch v0.4.0
+git clone https://github.com/asdf-vm/asdf.git ~/.asdf
 
 rm -rf ~/.zshrc
 
@@ -41,6 +40,5 @@ stow zsh
 
 source ~/.zshrc
 
-asdf plugin-add ruby https://github.com/asdf-vm/asdf-ruby
 asdf plugin-add erlang https://github.com/asdf-vm/asdf-erlang
 asdf plugin-add elixir https://github.com/asdf-vm/asdf-elixir

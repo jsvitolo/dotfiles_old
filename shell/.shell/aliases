@@ -22,6 +22,9 @@ alias elc='$EDITOR -nw $(gem which colorls)/../yaml/'
 alias e='$EDITOR'
 alias et="$EDITOR -nw"
 
+alias ..='cd ..'
+alias ...='cd ../..'
+alias ....='cd ../../..'
 
 # docker
 alias dimgs='docker images'

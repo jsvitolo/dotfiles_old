@@ -1,26 +1,33 @@
-#!/bin/bash
 
-source "${HOME}/.zgen/zgen.zsh"
+# antigen
+source ~/.antigen/antigen.zsh
 
-if ! zgen saved; then
-    echo "Creating a zgen save"
+antigen use oh-my-zsh
 
-    zgen oh-my-zsh
+antigen bundle zsh-users/zsh-syntax-highlighting
+antigen bundle zsh-users/zsh-autosuggestions
+antigen bundle zsh-users/zsh-completions
+antigen bundle chrissicool/zsh-256color
+antigen bundle extract
+antigen bundle git
 
-    zgen load mafredri/zsh-async
-    #zgen load sindresorhus/pure
-    zgen load zsh-users/zsh-syntax-highlighting
-    zgen load zsh-users/zsh-completions src
-    zgen load unixorn/autoupdate-zgen
-    zgen load ~/.oh-my-zsh/custom/plugins/elixir
+# Themes and prompts
 
-    zgen oh-my-zsh plugins/docker
-    zgen oh-my-zsh plugins/extract
-    zgen oh-my-zsh plugins/gem
-    zgen oh-my-zsh plugins/git
-    zgen oh-my-zsh plugins/gitfast
-    zgen oh-my-zsh plugins/git-extras
-    zgen oh-my-zsh themes/gnzh
+# antigen bundle mafredri/zsh-async
+# antigen bundle sindresorhus/pure
 
-    zgen save
-fi
+# antigen theme https://github.com/denysdovhan/spaceship-prompt spaceship
+# SPACESHIP_HG_SHOW=false
+# SPACESHIP_HG_BRANCH_SHOW=false
+# SPACESHIP_HG_STATUS_SHOW=false
+# SPACESHIP_EXEC_TIME_SHOW=false
+# SPACESHIP_BATTERY_SHOW=false
+# SPACESHIP_VI_MODE_SHOW=false
+
+antigen theme dracula/zsh
+
+# antigen theme akz92/clean
+
+# antigen theme robbyrussell
+
+antigen apply
