@@ -8,6 +8,23 @@
     ~/.gitconfig: git/gitconfig
     ~/.gitignore: git/gitignore
     ~/.oh-my-zsh: oh-my-zsh
+    ~/.antigen: antigen
+    ~/.shell: shell
+    ~/.zshrc: zshrc
+    ~/.spacemacs: spacemacs
+    ~/.emacs.d: emacs.d
+    ~/.asdf: asdf
+    ~/.tmux.conf: tmux/tmux.conf
+    ~/.tmux: tmux
+    ~/.editorconfig: editorconfig
+    ~/.colors: colors
+    ~/.config: config
+    ~/.iterm2: iterm2
+    ~/.zshenv: zshenv
+    ~/.iex.exs: iex.exs
+    ~/.gemrc: ruby/gemrc
+    ~/.pryrc: ruby/pryrc
+    ~/.irbrc: ruby/irbrc
 
 - shell:
     - [git submodule update --init --recursive, Installing submodules]
