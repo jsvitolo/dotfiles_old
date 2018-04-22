@@ -9,7 +9,7 @@ export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
 
 # GLOBAL
-export EDITOR="/Applications/Emacs.app/Contents/MacOS/bin/emacsclient -c --no-wait"
+export EDITOR="nvim"
 export GIT_EDITOR="/Applications/Emacs.app/Contents/MacOS/bin/emacsclient -c --no-wait"
 
 # TMUX
