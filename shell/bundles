@@ -16,7 +16,7 @@ antigen bundle git
 # antigen bundle mafredri/zsh-async
 # antigen bundle sindresorhus/pure
 
-# antigen theme https://github.com/denysdovhan/spaceship-prompt spaceship
+ antigen theme https://github.com/denysdovhan/spaceship-prompt spaceship
 # SPACESHIP_HG_SHOW=false
 # SPACESHIP_HG_BRANCH_SHOW=false
 # SPACESHIP_HG_STATUS_SHOW=false
@@ -24,7 +24,7 @@ antigen bundle git
 # SPACESHIP_BATTERY_SHOW=false
 # SPACESHIP_VI_MODE_SHOW=false
 
-antigen theme dracula/zsh
+#antigen theme dracula/zsh
 
 # antigen theme akz92/clean
 
