@@ -7,11 +7,11 @@ alias df='df -h'
 alias du='du -h'
 alias dus='du -hs'
 
-#alias ls='ls -lh --color=tty'
-#alias ll='ls -lah --color=tty'
-#alias la='ls -A'
-#alias l='ls -CF'
-alias lsdir="ls -d */  | cut -f1 -d'/'"
+# alias ls='ls -lh --color=tty'
+# alias ll='ls -lah --color=tty'
+# alias la='ls -A'
+# alias l='ls -CF'
+#alias lsdir="ls -d */  | cut -f1 -d'/'"
 
 alias lci='colorls -r'
 alias lc='colorls'
@@ -63,3 +63,5 @@ alias lsh='/opt/coreutils/bin/ls -lh'
 
 # list network port
 alias check_network="lsof -i -P | grep -i 'listen'"
+
+alias vim="nvim"
