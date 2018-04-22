@@ -25,6 +25,7 @@
     ~/.gemrc: ruby/gemrc
     ~/.pryrc: ruby/pryrc
     ~/.irbrc: ruby/irbrc
+    ~/.vimrc: config/nvim/init.vim
 
 - shell:
     - [git submodule update --init --recursive, Installing submodules]
