@@ -9,3 +9,6 @@ config/yarn
 Icon
 ._*
 config/.config/*
+config/htop
+config/fontconfig
+tmux/plugins/*
