@@ -14,5 +14,5 @@ source $HOME/.shell/completion
 #BASE16_SCHEME="eighties"
 #BASE16_SHELL="$HOME/.config/base16-shell/base16-$BASE16_SCHEME.dark.sh"
 #source $BASE16_SHELL
-export TERM=xterm-256color
+export TERM=screen-256color
 
