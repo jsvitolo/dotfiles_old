@@ -22,7 +22,7 @@ brew upgrade
 brew tap caskroom/versions
 brew tap chopp:sv1/term24
 brew tap caskroom/fonts
-brew tap d12frosted/emacs-plus
+brew tap railwaycat/emacsmacport
 
 brew install coreutils
 brew install moreutils
@@ -30,6 +30,7 @@ brew install findutils
 brew install gnu-sed --with-default-names
 brew install wget --with-iri
 brew install macvim --override-system-vim --with-cscope --with-lua --with-ruby --with-python
+brew install emacs-mac --with-modules --with-xml2 --with-modern-icon --with-gnutls
 brew install homebrew/dupes/grep
 brew install openssl
 brew install ack
@@ -45,7 +46,6 @@ brew install pgcli
 brew install watchman
 brew install tmux --HEAD
 brew install earn
-brew install emacs-plus --with-cocoa --with-gnutls --with-librsvg --with-imagemagick --with-spacemacs-icon
 brew install reattach-to-user-namespace
 brew install zsh
 brew install ag
