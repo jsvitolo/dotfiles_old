@@ -1,5 +1,4 @@
 " Set standard file encoding
-"
 set encoding=utf8
 " No special per file vim override configs
 set nomodeline
@@ -11,6 +10,12 @@ set nowrap
 set undolevels=100
 " Use system clipboard
 set clipboard=unnamed
+
+" Map escape to jk
+inoremap jk <Esc>
+
+" Map save :w
+nnoremap <F6> :w<CR>
 
 " Set tab width and convert tabs to spaces
 set tabstop=2
