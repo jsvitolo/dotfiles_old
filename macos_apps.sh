@@ -50,6 +50,7 @@ brew install reattach-to-user-namespace
 brew install zsh
 brew install ag
 brew install aspell --with-lang-en --with-lang-pt_BR
+brew install gettext
 # brew install wxmac
 # brew install pyenv
 brew install yarn

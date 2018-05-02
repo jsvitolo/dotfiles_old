@@ -1,13 +1,18 @@
 " Set standard file encoding
 set encoding=utf8
+
 " No special per file vim override configs
 set nomodeline
+
 " Stop word wrapping
 set nowrap
+
 " Except... on Markdown. That's good stuff.
   autocmd FileType markdown setlocal wrap
+
 " Adjust system undo levels
 set undolevels=100
+
 " Use system clipboard
 set clipboard=unnamed
 
@@ -27,9 +32,11 @@ set expandtab
 " set conceallevel=1
 set noerrorbells
 " Number gutter
+
 set number
 " Use search highlighting
 set hlsearch
+
 " Space above/beside cursor from screen edges
 set scrolloff=1
 set sidescrolloff=5
@@ -82,13 +89,13 @@ map ` :VimFiler -explorer<CR>
 map ~ :VimFilerCurrentDir -explorer -find<CR>
 
 " Sneaking Efficient Moving
-let g:sneak#s_next = 1
-nmap f <Plug>Sneak_f
-nmap F <Plug>Sneak_F
-xmap f <Plug>Sneak_f
-xmap F <Plug>Sneak_F
-omap f <Plug>Sneak_f
-omap F <Plug>Sneak_F
+"let g:sneak#s_next = 1
+"nmap f <Plug>Sneak_f
+"nmap F <Plug>Sneak_F
+"xmap f <Plug>Sneak_f
+"xmap F <Plug>Sneak_F
+"omap f <Plug>Sneak_f
+"omap F <Plug>Sneak_F
 
 " Plugin Manager
 call plug#begin('~/.local/share/nvim/plugged')
@@ -109,6 +116,8 @@ Plug 'Yggdroot/indentLine'
 Plug 'vim-ruby/vim-ruby'
 Plug 'whatyouhide/vim-gotham'
 
+Plug 'Shougo/deoplete.nvim'
+
 " Elixir Support 
 Plug 'elixir-lang/vim-elixir'
 Plug 'avdgaag/vim-phoenix'
@@ -121,6 +130,8 @@ Plug 'tpope/vim-endwise'
 Plug 'jadercorrea/elixir_generator.vim'
 call plug#end()
 
+" deoplete
+let g:deoplete#enable_at_startup = 1
 " Enable highlighting of the current line
 set cursorline
 

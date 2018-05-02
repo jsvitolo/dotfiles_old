@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 if [[ "$OSTYPE" == "darwin"* ]]; then
-   export BROWSER="/usr/bin/open"
+  export BROWSER="/usr/bin/open"
 
    # export PATH="/usr/local/opt/coreutils/libexec/gnubin:$PATH"
    #export MANPATH="/usr/local/opt/coreutils/libexec/gnuman:$MANPATH"
@@ -9,18 +9,19 @@ if [[ "$OSTYPE" == "darwin"* ]]; then
    # export PATH="/usr/local/opt/gettext/bin:$PATH"
    # # export PATH="/usr/local/opt/coreutils/libexec/gnubin:$PATH"
 
-#export NODE_PATH=/usr/local/opt/node@8
-# export PATH=/usr/local/bin:/usr/local/lib:/usr/bin:/bin
-   export PATH=/usr/local/bin:/usr/local/opt/coreutils/libexec/gnubin:/usr/local/opt/gettext/bin:/usr/local/opt/texinfo/bin:/usr/local/lib:/usr/local/sbin:/usr/bin:/usr/sbin:/bin:/sbin:/opt/local/bin
+  #export NODE_PATH=/usr/local/opt/node@8
+  # export PATH=/usr/local/bin:/usr/local/lib:/usr/bin:/bin
+  export PATH=/usr/local/bin:/usr/local/opt/coreutils/libexec/gnubin:/usr/local/opt/gettext/bin:/usr/local/opt/texinfo/bin:/usr/local/lib:/usr/local/sbin:/usr/bin:/usr/sbin:/bin:/sbin:/opt/local/bin
 
-export MANPATH="/usr/local/opt/gnu-sed/libexec/gnuman:$MANPATH"
+  export MANPATH="/usr/local/opt/gnu-sed/libexec/gnuman:$MANPATH"
 
 
   #fzf
   [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
- #pyenv
-#  export PYENV_ROOT="$HOME/.pyenv"
-#  export PATH="$PYENV_ROOT/bin:$PATH"
-#  eval "$(pyenv init -)"
+  # pyenv
+  export PYENV_ROOT="$HOME/.pyenv"
+  export PATH="$PYENV_ROOT/bin:$PATH"
+
+  eval "$(pyenv init -)"
 fi
