@@ -23,3 +23,11 @@ export DISABLE_UPDATE_PROMPT=true
 # POSTGRESQL
 export PGHOST=localhost
 export PGUSER=postgres
+
+# Shell history in IEx
+export ERL_AFLAGS="-kernel shell_history enabled"
+
+# GESTPREV USER
+export EMAIL1=jsvitolo@me.com
+export PASS1=!sisprev@789@
+export NAME1="Jones Silva Vitolo"

@@ -3,8 +3,8 @@
 #export RBENV_ROOT="$HOME/.rbenv"
 #export EXENV_ROOT="$HOME/.exenv"
 #export PATH="$RBENV_ROOT/bin:$EXENV_ROOT/bin:$PATH"
-export PATH="$HOME/.rbenv/bin:$PATH"
-eval "$(rbenv init -)"
+#export PATH="$HOME/.rbenv/bin:$PATH"
+#eval "$(rbenv init -)"
 
 # erlang /elixir
 export ERL_AFLAGS="-kernel shell_history enabled"
@@ -13,6 +13,9 @@ export ERL_AFLAGS="-kernel shell_history enabled"
 
 # The next line updates PATH for the Google Cloud SDK.
 #source '/Users/jsvitolo/Projects/infra/google-cloud-sdk/path.zsh.inc'
+
+source '/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.zsh.inc'
+source '/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.zsh.inc'
 
 # The next line enables shell command completion for gcloud.
 #source '/Users/jsvitolo/Projects/infra/google-cloud-sdk/completion.zsh.inc'

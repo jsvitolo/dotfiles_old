@@ -1,5 +1,4 @@
 #!/bin/bash
-
 alias rm='rm -i'
 
 
@@ -7,11 +6,11 @@ alias df='df -h'
 alias du='du -h'
 alias dus='du -hs'
 
-# alias ls='ls -lh --color=tty'
-# alias ll='ls -lah --color=tty'
-# alias la='ls -A'
-# alias l='ls -CF'
-#alias lsdir="ls -d */  | cut -f1 -d'/'"
+alias ls='ls -lh --color=tty'
+alias ll='ls -lah --color=tty'
+alias la='ls -A'
+alias l='ls -CF'
+alias lsdir="ls -d */  | cut -f1 -d'/'"
 
 alias lci='colorls -r'
 alias lc='colorls'
@@ -21,7 +20,6 @@ alias elc='$EDITOR -nw $(gem which colorls)/../yaml/'
 
 alias e='$EDITOR'
 alias et="$EDITOR -nw"
-
 alias ..='cd ..'
 alias ...='cd ../..'
 alias ....='cd ../../..'
@@ -29,6 +27,7 @@ alias ....='cd ../../..'
 # docker
 alias dimgs='docker images'
 alias dps='docker ps'
+alias dexec="docker exec -it $(docker ps | grep 'gestprev-api' | awk '{print $1}') /bin/bash"
 
 # docker-compose
 alias dcp='docker-compose'
@@ -54,14 +53,13 @@ alias copy-content='cat $1 | pbcopy'
 alias icloud='cd ~/Library/Mobile\ Documents/com~apple~CloudDocs'
 
 # icons
-alias ls='/opt/coreutils/bin/ls -lh'
-alias ll='/opt/coreutils/bin/ls -lah'
-alias la='/opt/coreutils/bin/ls -A'
-alias l='/opt/coreutils/bin/ls -CF'
-alias lsdir="/opt/coreutils/bin/ls -d */ | cut -f1 -d'/'"
-alias lsh='/opt/coreutils/bin/ls -lh'
+#alias ls='/opt/coreutils/bin/ls -lh'
+#alias ll='/opt/coreutils/bin/ls -lah'
+#alias la='/opt/coreutils/bin/ls -A'
+#alias l='/opt/coreutils/bin/ls -CF'
+#alias lsdir="/opt/coreutils/bin/ls -d */ | cut -f1 -d'/'"
+#alias lsh='/opt/coreutils/bin/ls -lh'
 
 # list network port
 alias check_network="lsof -i -P | grep -i 'listen'"
 
-alias vim="nvim"

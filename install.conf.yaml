@@ -11,21 +11,21 @@
     ~/.antigen: antigen
     ~/.shell: shell
     ~/.zshrc: zshrc
-    ~/.spacemacs: spacemacs
-    ~/.emacs.d: emacs.d
+#    ~/.spacemacs: spacemacs
+#    ~/.emacs.d: emacs.d
     ~/.asdf: asdf
     ~/.tmux.conf: tmux/tmux.conf
     ~/.tmux: tmux
     ~/.editorconfig: editorconfig
     ~/.colors: colors
-    ~/.config: config
+#    ~/.config: config
     ~/.iterm2: iterm2
     ~/.zshenv: zshenv
     ~/.iex.exs: iex.exs
     ~/.gemrc: ruby/gemrc
     ~/.pryrc: ruby/pryrc
     ~/.irbrc: ruby/irbrc
-    ~/.vimrc: config/nvim/init.vim
+#    ~/.vimrc: config/nvim/init.vim
 
 - shell:
     - [git submodule update --init --recursive, Installing submodules]

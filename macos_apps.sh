@@ -22,15 +22,15 @@ brew upgrade
 brew tap caskroom/versions
 brew tap chopp:sv1/term24
 brew tap caskroom/fonts
-brew tap railwaycat/emacsmacport
+#brew tap railwaycat/emacsmacport
 
 brew install coreutils
 brew install moreutils
 brew install findutils
 brew install gnu-sed --with-default-names
 brew install wget --with-iri
-brew install macvim --override-system-vim --with-cscope --with-lua --with-ruby --with-python
-brew install emacs-mac --with-modules --with-xml2 --with-modern-icon --with-gnutls
+#brew install macvim --override-system-vim --with-cscope --with-lua --with-ruby --with-python
+#brew install emacs-mac --with-modules --with-xml2 --with-modern-icon --with-gnutls
 brew install homebrew/dupes/grep
 brew install openssl
 brew install ack
@@ -54,9 +54,9 @@ brew install gettext
 # brew install wxmac
 # brew install pyenv
 brew install yarn
-brew install neovim/neovim/neovim
+#brew install neovim/neovim/neovim
 
-brew cask install xquartz
+#brew cask install xquartz
 brew cask install iterm2-beta
 brew cask install font-fira-code
 brew cask install font-source-code-pro
