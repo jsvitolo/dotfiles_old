@@ -31,6 +31,7 @@ brew install gnu-sed --with-default-names
 brew install wget --with-iri
 #brew install macvim --override-system-vim --with-cscope --with-lua --with-ruby --with-python
 #brew install emacs-mac --with-modules --with-xml2 --with-modern-icon --with-gnutls
+# brew install emacs-mac --with-spacemacs-icon --with-imagemagick --with-modules --with-xml2 ##testando com esse
 brew install homebrew/dupes/grep
 brew install openssl
 brew install ack

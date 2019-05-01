@@ -15,14 +15,18 @@ if [[ "$OSTYPE" == "darwin"* ]]; then
 
   export MANPATH="/usr/local/opt/gnu-sed/libexec/gnuman:$MANPATH"
 
-  export KERL_CONFIGURE_OPTIONS="--disable-debug --disable-silent-rules --without-javac --enable-shared-zlib --enable-dynamic-ssl-lib --enable-hipe --enable-sctp --enable-smp-support --enable-threads --enable-kernel-poll --enable-wx --enable-darwin-64bit --with-ssl=/usr/local/Cellar/openssl/1.0.2p"
+  # export KERL_CONFIGURE_OPTIONS="--disable-debug --disable-silent-rules --without-javac --enable-shared-zlib --enable-dynamic-ssl-lib --enable-hipe --enable-sctp --enable-smp-support --enable-threads --enable-kernel-poll --enable-wx --enable-darwin-64bit --with-ssl=/usr/local/Cellar/openssl/1.0.2p"
 
+  export KERL_CONFIGURE_OPTIONS="--disable-debug --disable-silent-rules --without-javac --enable-shared-zlib --enable-dynamic-ssl-lib --enable-hipe --enable-sctp --enable-smp-support --enable-threads --enable-kernel-poll --enable-wx --enable-darwin-64bit --with-ssl=/usr/local/opt/openssl"
 
   #fzf
   [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
   # flutter
   export PATH=$HOME/projects/sdk/flutter/bin:$PATH
+
+  # flutter Desktop
+  export ENABLE_FLUTTER_DESKTOP=true
 
   # pyenv
   # export PYENV_ROOT="$HOME/.pyenv"

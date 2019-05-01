@@ -32,14 +32,11 @@ values."
    '(
      yaml
      docker
-     typescript
      html
      helm
      better-defaults
      emacs-lisp
      elixir
-     ruby
-     ruby-on-rails
      git
      osx
      ;; markdown
@@ -62,7 +59,7 @@ values."
    ;; A list of packages that cannot be updated.
    dotspacemacs-frozen-packages '()
    ;; A list of packages that will not be installed and loaded.
-   dotspacemacs-excluded-packages '()
+   dotspacemacs-excluded-packages '(alchemist)
    ;; Defines the behaviour of Spacemacs when installing packages.
    ;; Possible values are `used-only', `used-but-keep-unused' and `all'.
    ;; `used-only' installs only explicitly used packages and uninstall any
@@ -433,7 +430,7 @@ you should place your code here."
  '(evil-want-Y-yank-to-eol t)
  '(package-selected-packages
    (quote
-    (doom-dracula-theme doom-themes typescript-mode rake inflections haml-mode gitignore-mode fringe-helper git-gutter+ git-gutter flyspell-correct pos-tip flycheck magit git-commit ghub let-alist with-editor json-mode magit-popup json-snatcher json-reformat inf-ruby all-the-icons memoize company elixir-mode tern tablist docker-tramp rjsx-mode web-beautify livid-mode skewer-mode simple-httpd js2-refactor yasnippet multiple-cursors js2-mode js-doc coffee-mode doom-nord-theme define-word yaml-mode xterm-color ws-butler winum which-key web-mode volatile-highlights vi-tilde-fringe uuidgen use-package unfill toc-org tide tagedit spaceline smeargle slim-mode shell-pop scss-mode sass-mode rvm ruby-tools ruby-test-mode rubocop rspec-mode robe reveal-in-osx-finder restart-emacs rbenv rainbow-delimiters pug-mode projectile-rails prettier-js popwin persp-mode pbcopy paradox osx-trash osx-dictionary orgit org-bullets open-junk-file ob-elixir neotree mwim multi-term move-text minitest magit-gitflow macrostep lorem-ipsum linum-relative link-hint less-css-mode launchctl indent-guide hungry-delete hl-todo highlight-parentheses highlight-numbers highlight-indentation helm-themes helm-swoop helm-projectile helm-mode-manager helm-make helm-gitignore helm-flx helm-descbinds helm-css-scss helm-ag google-translate golden-ratio gitconfig-mode gitattributes-mode git-timemachine git-messenger git-link git-gutter-fringe git-gutter-fringe+ flyspell-correct-helm flycheck-pos-tip flycheck-mix flycheck-credo flx-ido fill-column-indicator feature-mode fancy-battery eyebrowse expand-region exec-path-from-shell evil-visualstar evil-visual-mark-mode evil-unimpaired evil-tutor evil-surround evil-search-highlight-persist evil-numbers evil-nerd-commenter evil-mc evil-matchit evil-magit evil-lisp-state evil-indent-plus evil-iedit-state evil-exchange evil-escape evil-ediff evil-args evil-anzu eval-sexp-fu eshell-z eshell-prompt-extras esh-help emmet-mode elisp-slime-nav dumb-jump dockerfile-mode docker diminish diff-hl column-enforce-mode clean-aindent-mode chruby bundler auto-highlight-symbol auto-dictionary auto-compile alchemist aggressive-indent adaptive-wrap ace-window ace-link ace-jump-helm-line))))
+    (spaceline-all-the-icons powerline pcre2el spinner hydra parent-mode projectile request flx highlight transient smartparens iedit anzu evil goto-chg undo-tree pkg-info epl f s dash bind-map bind-key packed helm avy helm-core popup async doom-dracula-theme doom-themes typescript-mode rake inflections haml-mode gitignore-mode fringe-helper git-gutter+ git-gutter flyspell-correct pos-tip flycheck magit git-commit ghub let-alist with-editor json-mode magit-popup json-snatcher json-reformat inf-ruby all-the-icons memoize company elixir-mode tern tablist docker-tramp rjsx-mode web-beautify livid-mode skewer-mode simple-httpd js2-refactor yasnippet multiple-cursors js2-mode js-doc coffee-mode doom-nord-theme define-word yaml-mode xterm-color ws-butler winum which-key web-mode volatile-highlights vi-tilde-fringe uuidgen use-package unfill toc-org tide tagedit spaceline smeargle slim-mode shell-pop scss-mode sass-mode rvm ruby-tools ruby-test-mode rubocop rspec-mode robe reveal-in-osx-finder restart-emacs rbenv rainbow-delimiters pug-mode projectile-rails prettier-js popwin persp-mode pbcopy paradox osx-trash osx-dictionary orgit org-bullets open-junk-file ob-elixir neotree mwim multi-term move-text minitest magit-gitflow macrostep lorem-ipsum linum-relative link-hint less-css-mode launchctl indent-guide hungry-delete hl-todo highlight-parentheses highlight-numbers highlight-indentation helm-themes helm-swoop helm-projectile helm-mode-manager helm-make helm-gitignore helm-flx helm-descbinds helm-css-scss helm-ag google-translate golden-ratio gitconfig-mode gitattributes-mode git-timemachine git-messenger git-link git-gutter-fringe git-gutter-fringe+ flyspell-correct-helm flycheck-pos-tip flycheck-mix flycheck-credo flx-ido fill-column-indicator feature-mode fancy-battery eyebrowse expand-region exec-path-from-shell evil-visualstar evil-visual-mark-mode evil-unimpaired evil-tutor evil-surround evil-search-highlight-persist evil-numbers evil-nerd-commenter evil-mc evil-matchit evil-magit evil-lisp-state evil-indent-plus evil-iedit-state evil-exchange evil-escape evil-ediff evil-args evil-anzu eval-sexp-fu eshell-z eshell-prompt-extras esh-help emmet-mode elisp-slime-nav dumb-jump dockerfile-mode docker diminish diff-hl column-enforce-mode clean-aindent-mode chruby bundler auto-highlight-symbol auto-dictionary auto-compile alchemist aggressive-indent adaptive-wrap ace-window ace-link ace-jump-helm-line))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.

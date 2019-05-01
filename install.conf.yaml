@@ -11,7 +11,7 @@
     ~/.antigen: antigen
     ~/.shell: shell
     ~/.zshrc: zshrc
-#    ~/.spacemacs: spacemacs
+    ~/.spacemacs: spacemacs
 #    ~/.emacs.d: emacs.d
     ~/.asdf: asdf
     ~/.tmux.conf: tmux/tmux.conf
