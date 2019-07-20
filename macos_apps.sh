@@ -25,6 +25,7 @@ brew tap caskroom/fonts
 #brew tap railwaycat/emacsmacport
 
 brew install coreutils
+brew install gpg
 brew install moreutils
 brew install findutils
 brew install gnu-sed --with-default-names

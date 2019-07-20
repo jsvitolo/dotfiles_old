@@ -23,10 +23,12 @@ if [[ "$OSTYPE" == "darwin"* ]]; then
   [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
   # flutter
-  export PATH=$HOME/projects/sdk/flutter/bin:$PATH
+  export PATH=$HOME/Projects/SDK/flutter/bin:$PATH
 
   # flutter Desktop
   export ENABLE_FLUTTER_DESKTOP=true
+
+  export PATH="/usr/local/opt/gettext/bin:$PATH"
 
   # pyenv
   # export PYENV_ROOT="$HOME/.pyenv"
