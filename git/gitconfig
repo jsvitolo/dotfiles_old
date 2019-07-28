@@ -5,7 +5,7 @@
   user = jsvitolo
 [core]
   editor = vim
-  excludesfile = ~/.gitignore
+	excludesfile = /Users/jonesvitolo/.gitignore_global
   autocrlf = input
   pager = bash -lc 'diff-highlight | less -r' -
 [color]
