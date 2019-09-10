@@ -2,7 +2,7 @@
     link:
       relink: true
 
-- clean: ['~']
+- clean: ["~"]
 
 - link:
     ~/.gitconfig: git/gitconfig
@@ -12,17 +12,17 @@
     ~/.shell: shell
     ~/.zshrc: zshrc
     ~/.spacemacs: spacemacs
-#    ~/.emacs.d: emacs.d
+    #    ~/.emacs.d: emacs.d
     ~/.asdf: asdf
     ~/.fzf: fzf
     ~/.tmux.conf: tmux/tmux.conf
     ~/.tmux: tmux
     ~/.editorconfig: editorconfig
     ~/.colors: colors
-#    ~/.config: config
+    #    ~/.config: config
     ~/.iterm2: iterm2
     ~/.zshenv: zshenv
-    ~/.zsh_history: zsh_history
+    # ~/.zsh_history: zsh_history
     ~/.iex.exs: iex.exs
     ~/.gemrc: ruby/gemrc
     ~/.pryrc: ruby/pryrc
