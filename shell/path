@@ -22,8 +22,14 @@ if [[ "$OSTYPE" == "darwin"* ]]; then
   #fzf
   [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
+  export PATH=$PATH:$VIMCONFIG/pack/bundle/start/fzf/bin
+
   # flutter
   export PATH=$HOME/Projects/SDK/flutter/bin:$PATH
+
+  # vim and neovim
+  export VIMCONFIG=~/.config/nvim
+  export VIMDATA=~/.local/share/nvim
 
   # flutter Desktop
   export ENABLE_FLUTTER_DESKTOP=true

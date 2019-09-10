@@ -10,7 +10,7 @@ export LANG=en_US.UTF-8
 
 # GLOBAL
 export EDITOR="nvim"
-export GIT_EDITOR="/Applications/Emacs.app/Contents/MacOS/bin/emacsclient -c --no-wait"
+export GIT_EDITOR="vim"
 
 # TMUX
 # https://github.com/robbyrussell/oh-my-zsh/wiki/Plugins#tmux
@@ -22,12 +22,16 @@ export DISABLE_UPDATE_PROMPT=true
 
 # POSTGRESQL
 export PGHOST=localhost
-export PGUSER=postgres
+export PGUSER=contraktor
+export PGDATABASE=contraktor_dev
+export PGPASSWORD=password
 
 # Shell history in IEx
 export ERL_AFLAGS="-kernel shell_history enabled"
 
-# GESTPREV USER
-export EMAIL1=jsvitolo@me.com
-export PASS1=!sisprev@789@
-export NAME1="Jones Silva Vitolo"
+
+# NEOVIM
+export MYVIMRC=~/.config/nvim/init.vim
+
+# PROJECTS
+export PROJECTS=~/Projects

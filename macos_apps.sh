@@ -56,6 +56,8 @@ brew install gettext
 # brew install wxmac
 # brew install pyenv
 brew install yarn
+# beautify json format in shell
+brew install jq
 #brew install neovim/neovim/neovim
 
 #brew cask install xquartz
