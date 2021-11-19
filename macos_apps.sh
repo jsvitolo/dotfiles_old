@@ -19,10 +19,12 @@ brew update
 brew upgrade
 
 # Brew Extras
-brew tap caskroom/versions
-brew tap chopp:sv1/term24
-brew tap caskroom/fonts
+#brew tap caskroom/versions
+#brew tap chopp:sv1/term24
+#brew tap caskroom/fonts
 #brew tap railwaycat/emacsmacport
+
+brew tap homebrew/cask-fonts
 
 brew install coreutils
 brew install gpg

@@ -84,3 +84,5 @@
 [difftool]
 	prompt = false
 
+[http]
+	postBuffer = 157286400

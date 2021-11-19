@@ -2,3 +2,5 @@
 .vscode
 .elixir_ls
 .idea
+db-data
+postgres-data

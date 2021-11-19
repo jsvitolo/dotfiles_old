@@ -1,49 +1,75 @@
 #!/usr/bin/env bash
 
 if [[ "$OSTYPE" == "darwin"* ]]; then
-  export BROWSER="/usr/bin/open"
-
-   # export PATH="/usr/local/opt/coreutils/libexec/gnubin:$PATH"
-   #export MANPATH="/usr/local/opt/coreutils/libexec/gnuman:$MANPATH"
-   # export PATH="/usr/local/opt/texinfo/bin:$PATH"
-   # export PATH="/usr/local/opt/gettext/bin:$PATH"
-   # # export PATH="/usr/local/opt/coreutils/libexec/gnubin:$PATH"
-
-  #export NODE_PATH=/usr/local/opt/node@8
-  # export PATH=/usr/local/bin:/usr/local/lib:/usr/bin:/bin
-  export PATH=/usr/local/bin:/usr/local/opt/coreutils/libexec/gnubin:/usr/local/opt/gettext/bin:/usr/local/opt/texinfo/bin:/usr/local/lib:/usr/local/sbin:/usr/bin:/usr/sbin:/bin:/sbin:/opt/local/bin
-
-  export MANPATH="/usr/local/opt/gnu-sed/libexec/gnuman:$MANPATH"
-
-  # export KERL_CONFIGURE_OPTIONS="--disable-debug --disable-silent-rules --without-javac --enable-shared-zlib --enable-dynamic-ssl-lib --enable-hipe --enable-sctp --enable-smp-support --enable-threads --enable-kernel-poll --enable-wx --enable-darwin-64bit --with-ssl=/usr/local/Cellar/openssl/1.0.2p"
-
-  export KERL_CONFIGURE_OPTIONS="--disable-debug --disable-silent-rules --without-javac --enable-shared-zlib --enable-dynamic-ssl-lib --enable-hipe --enable-sctp --enable-smp-support --enable-threads --enable-kernel-poll --enable-wx --enable-darwin-64bit --with-ssl=/usr/local/opt/openssl"
-
-  #fzf
-  [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
-
-  export PATH=$PATH:$VIMCONFIG/pack/bundle/start/fzf/bin
-
-  # flutter
-  export PATH=$HOME/Projects/SDK/flutter/bin:$PATH
-
-  # vim and neovim
-  export VIMCONFIG=~/.config/nvim
-  export VIMDATA=~/.local/share/nvim
-
-  # flutter Desktop
-  export ENABLE_FLUTTER_DESKTOP=true
-
-  export PATH="/usr/local/opt/gettext/bin:$PATH"
-
-  # pyenv
-  # export PYENV_ROOT="$HOME/.pyenv"
-  # export PATH="$PYENV_ROOT/bin:$PATH"
-
-  # eval "$(pyenv init -)"
-
-  . $HOME/.asdf/asdf.sh
-  . $HOME/.asdf/completions/asdf.bash
+    export BROWSER="/usr/bin/open"
+    CPU=$(uname -p)
+    
+    if [[ "$CPU" == "i386" ]]; then
+        
+        # export PATH="/usr/local/opt/coreutils/libexec/gnubin:$PATH"
+        #export MANPATH="/usr/local/opt/coreutils/libexec/gnuman:$MANPATH"
+        # export PATH="/usr/local/opt/texinfo/bin:$PATH"
+        # export PATH="/usr/local/opt/gettext/bin:$PATH"
+        # # export PATH="/usr/local/opt/coreutils/libexec/gnubin:$PATH"
+        
+        #export NODE_PATH=/usr/local/opt/node@8
+        # export PATH=/usr/local/bin:/usr/local/lib:/usr/bin:/bin
+        export PATH=/usr/local/bin:/usr/local/opt/coreutils/libexec/gnubin:/usr/local/opt/gettext/bin:/usr/local/opt/texinfo/bin:/usr/local/lib:/usr/local/sbin:/usr/bin:/usr/sbin:/bin:/sbin:/opt/local/bin
+        
+        export MANPATH="/usr/local/opt/gnu-sed/libexec/gnuman:$MANPATH"
+        
+        # export KERL_CONFIGURE_OPTIONS="--disable-debug --disable-silent-rules --without-javac --enable-shared-zlib --enable-dynamic-ssl-lib --enable-hipe --enable-sctp --enable-smp-support --enable-threads --enable-kernel-poll --enable-wx --enable-darwin-64bit --with-ssl=/usr/local/Cellar/openssl/1.0.2p"
+        
+        # comentei por ultimo
+        # export KERL_CONFIGURE_OPTIONS="--disable-debug --disable-silent-rules --without-javac --enable-shared-zlib --enable-dynamic-ssl-lib --enable-hipe --enable-sctp --enable-smp-support --enable-threads --enable-kernel-poll --enable-wx --enable-darwin-64bit --with-ssl=/usr/local/opt/openssl"
+        
+        #fzf
+        [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+        
+        export PATH=$PATH:$VIMCONFIG/pack/bundle/start/fzf/bin
+        
+        # flutter
+        export PATH=$HOME/Projects/SDK/flutter/bin:$PATH
+        
+        # vim and neovim
+        export VIMCONFIG=~/.config/nvim
+        export VIMDATA=~/.local/share/nvim
+        
+        # flutter Desktop
+        export ENABLE_FLUTTER_DESKTOP=true
+        
+        export PATH="/usr/local/opt/gettext/bin:$PATH"
+        
+        # pyenv
+        # export PYENV_ROOT="$HOME/.pyenv"
+        # export PATH="$PYENV_ROOT/bin:$PATH"
+        
+        # eval "$(pyenv init -)"
+        
+        # yarn
+        export PATH="$PATH:$HOME/.yarn/bin"
+        
+        # brew
+        eval "$(/usr/local/bin/brew shellenv)"
+        
+        . $HOME/.asdf/asdf.sh
+        . $HOME/.asdf/completions/asdf.bash
+    else # arm
+        #fzf
+        [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+        # asdf
+        . $HOME/.asdf_arm/asdf.sh
+        . $HOME/.asdf_arm/completions/asdf.bash
+        
+        #node via brew
+        export PATH="/opt/homebrew/opt/node@12/bin:$PATH"
+        # For compilers to find node@12 you may need to set
+        export LDFLAGS="-L/opt/homebrew/opt/node@12/lib"
+        export CPPFLAGS="-I/opt/homebrew/opt/node@12/include"
+        
+        # brew
+        eval "$(/opt/homebrew/bin/brew shellenv)"
+    fi
 fi
 
 

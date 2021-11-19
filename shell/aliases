@@ -27,7 +27,7 @@ alias ....='cd ../../..'
 # docker
 alias dimgs='docker images'
 alias dps='docker ps'
-alias dexec="docker exec -it $(docker ps | grep 'gestprev-api' | awk '{print $1}') /bin/bash"
+# alias dexec="docker exec -it $(docker ps | grep 'gestprev-api' | awk '{print $1}') /bin/bash"
 
 # docker-compose
 alias dcp='docker-compose'
@@ -35,14 +35,14 @@ alias dcpu='docker-compose up'
 alias dcpud='docker-compose up -d'
 
 # ruby
-alias be='bundle exec'
+# alias be='bundle exec'
 
-if [[ "$OSTYPE" == "darwin"* ]]; then
-  alias cask='brew cask'
-fi
+# if [[ "$OSTYPE" == "darwin"* ]]; then
+#   alias cask='brew cask'
+# fi
 
 # servidor casa plex
-alias plex='ssh adminuser@192.168.0.210'
+# alias plex='ssh adminuser@192.168.0.210'
 
 alias remove_link='rm -iv $1' 
 alias compress='tar -czvf $1 $2'
@@ -50,7 +50,7 @@ alias compress='tar -czvf $1 $2'
 alias copy-content='cat $1 | pbcopy'
 
 # abrir icloud
-alias icloud='cd ~/Library/Mobile\ Documents/com~apple~CloudDocs'
+# alias icloud='cd ~/Library/Mobile\ Documents/com~apple~CloudDocs'
 
 # icons
 #alias ls='/opt/coreutils/bin/ls -lh'

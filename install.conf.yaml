@@ -12,22 +12,22 @@
     ~/.antigen: antigen
     ~/.shell: shell
     ~/.zshrc: zshrc
-    ~/.spacemacs: spacemacs
+#    ~/.spacemacs: spacemacs
     #    ~/.emacs.d: emacs.d
     ~/.asdf: asdf
     ~/.fzf: fzf
-    ~/.tmux.conf: tmux/tmux.conf
-    ~/.tmux: tmux
+#    ~/.tmux.conf: tmux/tmux.conf
+#    ~/.tmux: tmux
     ~/.editorconfig: editorconfig
-    ~/.colors: colors
+#    ~/.colors: colors
     #    ~/.config: config
-    ~/.iterm2: iterm2
+#    ~/.iterm2: iterm2
     ~/.zshenv: zshenv
     # ~/.zsh_history: zsh_history
     ~/.iex.exs: iex.exs
-    ~/.gemrc: ruby/gemrc
+#    ~/.gemrc: ruby/gemrc
     ~/.pryrc: ruby/pryrc
-    ~/.irbrc: ruby/irbrc
+#    ~/.irbrc: ruby/irbrc
 #    ~/.vimrc: config/nvim/init.vim
 
 - shell:
