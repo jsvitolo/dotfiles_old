@@ -21,10 +21,10 @@ export ZSH_TMUX_AUTOSTART_ONCE="true"
 export DISABLE_UPDATE_PROMPT=true
 
 # POSTGRESQL
-export PGHOST=localhost
-export PGUSER=contraktor
-export PGDATABASE=contraktor_dev
-export PGPASSWORD=password
+# export PGHOST=localhost
+# export PGUSER=contraktor
+# export PGDATABASE=contraktor_dev
+# export PGPASSWORD=password
 
 # Shell history in IEx
 export ERL_AFLAGS="-kernel shell_history enabled"
@@ -34,4 +34,4 @@ export ERL_AFLAGS="-kernel shell_history enabled"
 export MYVIMRC=~/.config/nvim/init.vim
 
 # PROJECTS
-export PROJECTS=~/Projects
+# export PROJECTS=~/Projects

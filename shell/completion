@@ -5,6 +5,35 @@ function h() { cd ~/$@; };
 compctl -/ -W ~/ h
 
 # ZSH & Bash Completion
-autoload -U compinit && compinit
-autoload -U bashcompinit && bashcompinit
+# autoload -U compinit && compinit
+# autoload -U bashcompinit && bashcompinit
 zmodload -i zsh/complist
+
+autoload -Uz compinit
+compinit
+# Load the prompt theme system
+autoload -U promptinit
+promptinit
+setopt SHARE_HISTORY
+setopt EXTENDED_HISTORY
+setopt EXTENDED_GLOB
+setopt promptsubst
+WORDCHARS=${WORDCHARS//[&=\/;!#%{}-]}
+# End of lines added by compinstall
+zstyle ':completion:*' glob 1
+zstyle ':completion:*' menu select=long-list select=0
+zstyle ':completion:*' list-colors ${(s.:.)LS_COLORS}
+# ignore files already given for rm, kill, diff
+zstyle ':completion:*:(rm|kill|diff):*' ignore-line yes
+# interactive configuration
+setopt nonomatch # dont print error if no match is found
+setopt correct # correct spelling mistakes in commands
+setopt autocd # change to directory without "cd"
+setopt auto_list # auto-list all completion choices when hitting TAB
+# automenu is needed for menu-based selection
+setopt auto_menu # don't auto-list first match
+unsetopt extendedglob
+# for file in $HOME/.zsh/*; do
+    # source $file
+# done
+# xset r rate 200 50

@@ -5,29 +5,29 @@
 - clean: ["~"]
 
 - link:
-    ~/.gitconfig: git/gitconfig
-    ~/.gitignore: git/gitignore
-    ~/.gitignore_global: git/gitignore_global
+    # ~/.gitconfig: git/gitconfig
+    # ~/.gitignore: git/gitignore
+    # ~/.gitignore_global: git/gitignore_global
     ~/.oh-my-zsh: oh-my-zsh
     ~/.antigen: antigen
     ~/.shell: shell
     ~/.zshrc: zshrc
-    ~/.spacemacs: spacemacs
+    # ~/.spacemacs: spacemacs
     #    ~/.emacs.d: emacs.d
-    ~/.asdf: asdf
-    ~/.fzf: fzf
-    ~/.tmux.conf: tmux/tmux.conf
-    ~/.tmux: tmux
-    ~/.editorconfig: editorconfig
-    ~/.colors: colors
+    # ~/.asdf: asdf
+    # ~/.fzf: fzf
+    # ~/.tmux.conf: tmux/tmux.conf
+    # ~/.tmux: tmux
+    # ~/.editorconfig: editorconfig
+    # ~/.colors: colors
     #    ~/.config: config
-    ~/.iterm2: iterm2
-    ~/.zshenv: zshenv
+    # ~/.iterm2: iterm2
+    # ~/.zshenv: zshenv
     # ~/.zsh_history: zsh_history
-    ~/.iex.exs: iex.exs
-    ~/.gemrc: ruby/gemrc
-    ~/.pryrc: ruby/pryrc
-    ~/.irbrc: ruby/irbrc
+    # ~/.iex.exs: iex.exs
+    # ~/.gemrc: ruby/gemrc
+    # ~/.pryrc: ruby/pryrc
+    # ~/.irbrc: ruby/irbrc
 #    ~/.vimrc: config/nvim/init.vim
 
 - shell:

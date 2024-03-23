@@ -2,40 +2,32 @@
 
 # Google it
 google() {
-  local term="$@"
-  local url="http://www.google.com/search?q=${term// /+}"
-  $BROWSER -a Google\ Chrome "$url"
+	local term="$@"
+	local url="http://www.google.com/search?q=${term// /+}"
+	$BROWSER -a Google\ Chrome "$url"
 }
 
 # Github
 github() {
-  local term="$@"
-  local url="http://www.github.com/${term// /+}"
-  $BROWSER "$url"
+	local term="$@"
+	local url="http://www.github.com/${term// /+}"
+	$BROWSER "$url"
 }
 
 # Google Console
 gconsole() {
-  local term="$@"
-  local url="https://console.developers.google.com/home/dashboard?project=${term// /+}"
-  $BROWSER "$url"
-}
-
-# Jenkins
-jenkins() {
-    local url="http://ci.sisprev.net.br/login?from=%2Fmanage"
-    $BROWSER -a Google\ Chrome "$url"
+	local term="$@"
+	local url="https://console.developers.google.com/home/dashboard?project=${term// /+}"
+	$BROWSER "$url"
 }
 
 # Reddit
 reddit() {
-    local term="$@"
-    local url="https://www.reddit.com/r/${term// /+}/"
-    $BROWSER -a Google\ Chrome "$url"
+	local term="$@"
+	local url="https://www.reddit.com/r/${term// /+}/"
+	$BROWSER -a Google\ Chrome "$url"
 }
 
-# Transmission
-transmission() {
-    local url="http://192.168.0.210:9091"
-    $BROWSER "$url"
+k-secrets() {
+	kubectl get secrets $@ -ojson | jq '{name: .metadata.name, data: .data | map_values(@base64d)}'
 }

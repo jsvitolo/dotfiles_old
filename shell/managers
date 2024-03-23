@@ -5,9 +5,10 @@
 #export PATH="$RBENV_ROOT/bin:$EXENV_ROOT/bin:$PATH"
 #export PATH="$HOME/.rbenv/bin:$PATH"
 #eval "$(rbenv init -)"
+eval "$(/opt/homebrew/bin/brew shellenv)"
 
 # erlang /elixir
-export ERL_AFLAGS="-kernel shell_history enabled"
+# export ERL_AFLAGS="-kernel shell_history enabled"
 
 # Google Cloud
 
@@ -23,11 +24,11 @@ export ERL_AFLAGS="-kernel shell_history enabled"
 
 #### ibxml2 #######
 # For compilers to find libxml2 you may need to set
-export LDFLAGS="-L/usr/local/opt/libxml2/lib"
-export CPPFLAGS="-I/usr/local/opt/libxml2/include"
+# export LDFLAGS="-L/usr/local/opt/libxml2/lib"
+# export CPPFLAGS="-I/usr/local/opt/libxml2/include"
 
 # For pkg-config to find libxml2 you may need to set:
-export PKG_CONFIG_PATH="/usr/local/opt/libxml2/lib/pkgconfig"
+# export PKG_CONFIG_PATH="/usr/local/opt/libxml2/lib/pkgconfig"
 
 # RBENV
 #which rbenv > /dev/null && eval "$(rbenv init -)"
@@ -42,15 +43,36 @@ export PKG_CONFIG_PATH="/usr/local/opt/libxml2/lib/pkgconfig"
 
 # KERL
 #. ~/.kerl/installations/erlang-18.3/activate
+#
+# Nvins
+alias nvim-lazy="NVIM_APPNAME=LazyVim nvim"
+alias nvim-kick="NVIM_APPNAME=kickstart nvim"
+alias nvim-chad="NVIM_APPNAME=NvChad nvim"
+alias nvim-astro="NVIM_APPNAME=AstroNvim nvim"
+
+function nvims() {
+  items=("default" "kickstart" "LazyVim" "NvChad" "AstroNvim")
+  config=$(printf "%s\n" "${items[@]}" | fzf --prompt=" Neovim Config " --height=~50% --layout=reverse --border --exit-0)
+  if [[ -z $config ]]; then
+    echo "Nothing selected"
+    return 0
+  elif [[ $config == "default" ]]; then
+    config=""
+  fi
+  NVIM_APPNAME=$config nvim $@
+}
+
+bindkey -s ^a "nvims\n"
 
 
 # ASDF
-. $HOME/.asdf/asdf.sh
-. $HOME/.asdf/completions/asdf.bash
+. /opt/homebrew/opt/asdf/libexec/asdf.sh
 
+# Z
+. /opt/homebrew/etc/profile.d/z.sh
 ### Em teste
 # ssl for compilers find openssl
-export LDFLAGS="-L/usr/local/opt/openssl/lib"
-export CPPFLAGS="-I/usr/local/opt/openssl/include"
-export PKG_CONFIG_PATH="/usr/local/opt/openssl/lib/pkgconfig"
+# export LDFLAGS="-L/usr/local/opt/openssl/lib"
+# export CPPFLAGS="-I/usr/local/opt/openssl/include"
+# export PKG_CONFIG_PATH="/usr/local/opt/openssl/lib/pkgconfig"
 ###
