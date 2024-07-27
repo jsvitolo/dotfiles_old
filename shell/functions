@@ -14,12 +14,6 @@ github() {
 	$BROWSER "$url"
 }
 
-# Google Console
-gconsole() {
-	local term="$@"
-	local url="https://console.developers.google.com/home/dashboard?project=${term// /+}"
-	$BROWSER "$url"
-}
 
 # Reddit
 reddit() {

@@ -10,3 +10,4 @@ source $HOME/.shell/aliases
 source $HOME/.shell/functions
 source $HOME/.shell/completion
 
+source "${XDG_CONFIG_HOME:-$HOME/.config}/asdf-direnv/zshrc"
