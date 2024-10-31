@@ -25,8 +25,8 @@ alias ....='cd ../../..'
 
 # docker
 alias dimgs='docker images'
-alias dps='docker ps'
-alias dexec="docker exec -it $(docker ps | grep 'gestprev-api' | awk '{print $1}') /bin/bash"
+alias dps='docker ps --format "table {{.ID}}\t{{.Image}}"'
+# alias dexec="docker exec -it $(docker ps | grep 'gestprev-api' | awk '{print $1}') /bin/bash"
 
 # docker-compose
 alias dcp='docker compose'
@@ -49,6 +49,9 @@ alias remove_link='rm -iv $1'
 alias compress='tar -czvf $1 $2'
 
 alias copy-content='cat $1 | pbcopy'
+alias k='kubectl'
+alias kbens='kubens'
+alias monkpath='monkey-patch.sh'
 
 # abrir icloud
 #alias icloud='cd ~/Library/Mobile\ Documents/com~apple~CloudDocs'
@@ -63,4 +66,17 @@ alias copy-content='cat $1 | pbcopy'
 
 # list network port
 alias check_network="lsof -i -P | grep -i 'listen'"
+alias stone_vpn='sshuttle -r jones.vitolo@192.168.100.242 10.253.8.0/24'
+
+alias k='kubectl'
+alias kpods='nu -c "kubectl get pods -o json | from json | get items | each { |it| {
+    name: $it.metadata.name,
+    namespace: $it.metadata.namespace,
+    creationTimestamp: $it.metadata.creationTimestamp,
+    image: $it.spec.containers.0.image,
+    status: $it.status.phase,
+    ready: $it.status.containerStatuses.0.ready,
+    restarts: $it.status.containerStatuses.0.restartCount,
+    podIP: $it.status.podIP
+} } | flatten"'
 

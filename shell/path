@@ -23,6 +23,7 @@ if [[ "$OSTYPE" == "darwin"* ]]; then
   [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
   export PATH=$PATH:$VIMCONFIG/pack/bundle/start/fzf/bin
+  export PATH="$PATH:/Users/jsvitolo/Developer/Personal/scripts"
 
   # flutter
   # export PATH=$HOME/Projects/SDK/flutter/bin:$PATH
@@ -35,6 +36,10 @@ if [[ "$OSTYPE" == "darwin"* ]]; then
   export ENABLE_FLUTTER_DESKTOP=true
 
   export PATH="/usr/local/opt/gettext/bin:$PATH"
+  
+ # Go path
+ export GOPATH="$ASDF_DIR/shims"
+# export GOROOT="$(go env GOROOT)"
 
   # pyenv
   # export PYENV_ROOT="$HOME/.pyenv"
